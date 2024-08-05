@@ -4,6 +4,7 @@ import ResortIndex from "./ResortIndex";
 import CountryIndex from "./CountryIndex";
 import Activities from "./Activities";
 import Subscribe from "./Subscribe";
+import { Link } from "react-router-dom";
 
 const IndexRest = () => {
     return (
@@ -33,7 +34,7 @@ const IndexRest = () => {
                     <div className="flex basis-[50%] box absolute right-0 p-4 md:relative items-end md:items-center justify-end md:justify-center">
                         <div className="flex bg-[#f8f8f8] p-4 md:relative clipbox md:p-0 w-[90%] md:w-fit h-fit md:bg-none flex-col gap-6">
                             <p className="w-full md:w-[350px]">We provide exclusive resort packages for luxurious getaways, ensuring unforgettable experiences in the world's most stunning destinations.</p>
-                            <button className="button self-end md:self-auto">Know More</button>
+                            <Link to={"/about"}><button className="button self-end md:self-auto">Know More</button></Link>
                         </div>
                     </div>
                 </div>
