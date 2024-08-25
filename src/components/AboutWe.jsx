@@ -1,4 +1,4 @@
-import flipone from "../assets/ecstasy.jpg";
+import flipone from "../assets/polo-t.jpg";
 import fliptwo from "../assets/flip-n.jpg";
 
 const images = [fliptwo, flipone];

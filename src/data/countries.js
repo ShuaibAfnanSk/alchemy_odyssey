@@ -1,10 +1,5 @@
 const countries = [
     {
-        name: "Maldives",
-        desc: "World-renowned for luxury overwater villas and crystal-clear waters, perfect for an idyllic beach getaway.",
-        image: "https://raw.githubusercontent.com/ShuaibAfnanSk/resort_assests/main/maldives.jpg"
-    },
-    {
         name: "Thailand",
         desc: "Famous for its stunning beach resorts, vibrant culture, and exceptional hospitality.",
         image: "https://raw.githubusercontent.com/ShuaibAfnanSk/resort_assests/main/thailand.jpg"
@@ -16,8 +11,13 @@ const countries = [
     },
     {
         name: "Bali",
-        desc: "Offers luxurious resorts amidst lush greenery, serene beaches, and a unique cultural experience.",
+        desc: "Luxurious resorts amidst lush greenery, serene beaches, and a unique cultural experience.",
         image: "https://raw.githubusercontent.com/ShuaibAfnanSk/resort_assests/main/bali.jpg"
+    },
+    {
+        name: "Maldives",
+        desc: "World-renowned for luxury overwater villas and crystal-clear water and beaches.",
+        image: "https://raw.githubusercontent.com/ShuaibAfnanSk/resort_assests/main/maldives.jpg"
     },
     {
         name: "Greece",
@@ -30,8 +30,8 @@ const countries = [
         image: "https://raw.githubusercontent.com/ShuaibAfnanSk/resort_assests/main/spain.jpg"
     },
     {
-        name: "Dominican Republic",
-        desc: "Known for its all-inclusive resorts, pristine beaches, and warm Caribbean hospitality.",
+        name: "Dominican",
+        desc: "Known for its inclusive resorts, pristine beaches & warm Caribbean hospitality.",
         image: "https://raw.githubusercontent.com/ShuaibAfnanSk/resort_assests/main/dominican.jpg"
     },
     {

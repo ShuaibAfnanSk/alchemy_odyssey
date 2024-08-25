@@ -5,8 +5,7 @@ import twitter from "../assets/twitter.svg";
 import fb from "../assets/fb.svg";
 import linkedin from "../assets/linkedin.svg";
 
-
-const icons = [insta, twitter, fb, linkedin]
+const icons = [insta, twitter, fb, linkedin];
 
 const Team = () => {
     return (
@@ -16,7 +15,7 @@ const Team = () => {
                 <h3 className="text-5xl">Team</h3>
             </div>
             <div className="flex flex-col gap-10 items-center">
-                <div className="bg-white shadow-custom clippath lg:h-[500px] flex flex-col items-center lg:items-end lg:flex-row gap-10 w-fit">
+                <div className="bg-white shadow-custom lg:h-[500px] flex flex-col items-center lg:items-end lg:flex-row gap-10 w-fit">
                     <img src={lead} className="w-[300px] lg:w-[400px] object-cover h-full" alt="" />
                     <div className="px-4 sm:px-10 pb-10 flex items-center lg:items-start justify-end flex-col">
                         <div className="flex gap-4 mb-4">

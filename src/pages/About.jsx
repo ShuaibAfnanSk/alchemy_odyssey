@@ -13,8 +13,8 @@ const About = () => {
                 <AboutIndex />
                 <Team />
                 <Testimonials />
-                <Subscribe />
             </div>
+            <Subscribe />
         </section>
     );
 }

@@ -16,8 +16,8 @@ const Resorts = () => {
                         <ResortCard item={r} />
                     ))}
                 </div>
-                <Subscribe />
             </div>
+            <Subscribe />
         </section>
     );
 }

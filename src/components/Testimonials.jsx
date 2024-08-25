@@ -34,7 +34,7 @@ const Testimonials = () => {
                 </div>
                 <Slider slider={slider} className="flex px-4 sm:px-10 gap-4">
                     {testimonial.map((t) => (
-                        <div className="min-w-[300px] h-[400px] clippath relative bg-white p-8 flex flex-col justify-between">
+                        <div className="min-w-[300px] h-[400px] relative bg-white p-8 flex flex-col justify-between">
                             <img src={t.image} className="w-[150px] object-cover h-[150px] rounded-[50%] top-[-3rem] left-[-3rem]" alt="" />
                             <img src={quote} className="w-[50px] h-[50px] absolute top-4 right-4" alt="" />
                             <div className="flex flex-col gap-2">

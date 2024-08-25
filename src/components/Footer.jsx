@@ -7,29 +7,38 @@ import linkedin from "../assets/linkedin.svg";
 
 const icons = [insta, twitter, fb, linkedin]
 
-const links = ["Resorts", "Countries", "Gallery" ,"About", "Contact"]
+const links = ["Resorts", "Countries", "Gallery", "About", "Contact"]
 
 const Footer = () => {
 
     const date = new Date().getFullYear()
 
     return (
-        <footer className="px-4 md:px-10 py-5 footer">
-            <div className="border-b-[1px] flex flex-wrap gap-4 justify-between items-center pt-5 pb-10 sm:py-10 border-[#fff]">
-                <ul className="flex items-center gap-4 flex-wrap md:gap-8">
-                    {links.map((l) => (
-                        <li>{l}</li>
-                    ))}
+        <footer className="border-t border-[#97c1a9] mt-20">
+            <div className="flex justify-between flex-wrap items-center gap-10 px-4 sm:px-10 py-8">
+                <ul>
+                    <li>Home</li>
+                    <li>Resorts</li>
+                    <li>Gallery</li>
+                    <li>About</li>
+                    <li>Contact</li>
                 </ul>
-                <div className="flex gap-4">
-                    {icons.map((i) => (
-                        <img src={i} className="w-[25px] cursor-pointer h-[25px]" alt="" />
-                    ))}
+                <div className="flex flex-col gap-2 items-center">
+                    <h3>Subscribe to our newsletter</h3>
+                    <div className="subscriber w-[300px] sm:w-[325px]">
+                        <input type="text" className="text-sm sm:text-base" placeholder="john.doe@gmail.com" />
+                        <button className="button">submit</button>
+                    </div>
                 </div>
             </div>
-            <div className="flex justify-between items-center mt-5">
-                <p className="flex items-center gap-1 sm:gap-2 text-xs sm:text-base"><span className="text-xl sm:text-3xl">©</span> copyright <Link to={'/'} className="underline">alchemy</Link> {date} all rights reserved</p>
+            <div className="bg-[#97c1a9] flex-wrap px-4 sm:px-10 py-5 flex items-center gap-4 justify-between">
                 <img src={logo} className="w-[50px] h-[50px]" alt="" />
+                <p>© {date} alchemy all rights reserved</p>
+                <div className="flex gap-2">
+                    {icons.map((i) => (
+                        <img src={i} className="" alt="" />
+                    ))}
+                </div>
             </div>
         </footer>
     );

@@ -11,34 +11,47 @@ const Fixed = styled.div`
     background-image: url(${props => props.image});
 `
 
+const activities = ["Diving", "Surfing", "Park", "Golf", "Speed Boating"]
+
 const SingleResort = () => {
 
     const path = window.location.pathname.split('/')[2];
     const resort = resorts.find((r) => r.id == path);
 
     return (
-        <section>
+        <section className="flex flex-col gap-16">
             <Fixed image={resort.mainImage} />
-            <div className="flex gap-12 w-full flex-col px-4 pb-4 rounded-t-[4rem] move-up sm:px-10 pt-16 bg-[#f8f8f8]">
-                <div className="flex w-full flex-col items-center gap-4">
-                    <div className="flex gap-2">
-                        <span>Country - </span>
-                        <h4>{resort.country}</h4>
-                    </div>
-                    <button className="button-b">package - {resort.package}</button>
-                    <h3 className="text-5xl w-full sm:text-6xl sm:-[350px] uppercase font-os text-center">{resort.name}</h3>
-                    <p className="w-full text-sm md:text-base md:w-[750px]">{resort.desc}</p>
-                </div>
-                <div className="relative w-full flex flex-col items-center gap-10">
-                    {resort.gallery.map((g) => (
-                        <div className="h-[400px] rounded-xl overflow-hidden sm:h-[550px] cards sticky">
-                            <img src={g} className="w-full object-cover h-full" alt="" />
+            <div className="flex flex-col gap-16 px-4 sm:px-10">
+                <div className="flex justify-between flex-wrap gap-8">
+                    <div className="w-[300px] rounded-lg flex flex-col gap-12 bg-[#97c1a9] h-fit p-6">
+                        <h3 className="text-3xl text-white">{resort.name}</h3>
+                        <div className="border-y border-white py-5 text-white">
+                            <p>Country - {resort.country}</p>
+                            <p>Price - {resort.package}</p>
                         </div>
-                    ))}
-                    <div className="sticky h-[200px]"></div>
+                        <div className="flex gap-2 flex-wrap">
+                            {activities.map((a) => (
+                                <span className="bg-white px-5 rounded-[3rem] py-2 text-xs">{a}</span>
+                            ))}
+                        </div>
+                    </div>
+                    <div className="w-full md:w-1/2">
+                        <p className="sm:text-justify w-full">{resort.desc}</p>
+                    </div>
                 </div>
-                <Subscribe />
+                <div className="flex flex-col gap-12">
+                    <div className="flex flex-col items-center">
+                        <h4>clicks of paradise</h4>
+                        <h3 className="text-5xl">Gallery</h3>
+                    </div>
+                    <div className="relative flex flex-col gap-10 items-center">
+                        {resort.gallery.map((g, id) => (
+                            <img src={g} key={id} className="card object-cover w-[100%] h-[400px] md:h-[700px] rounded-lg" alt="" />
+                        ))}
+                    </div>
+                </div>
             </div>
+            <Subscribe />
         </section >
     );
 }

@@ -1,10 +1,31 @@
 const activities = [
-    {name: "Beach", desc: "Relax on pristine sands with crystal-clear waters and stunning views. Bask in the sun, build sandcastles, or take a leisurely swim in the warm, turquoise sea. Perfect for a day of relaxation and family fun.", src: "https://raw.githubusercontent.com/ShuaibAfnanSk/resort_assests/main/beach.jpg", svg:"https://raw.githubusercontent.com/ShuaibAfnanSk/resort_assests/main/beach.svg"},
-    {name: "Park", desc: "Explore lush greenery and serene landscapes perfect for leisurely strolls. Enjoy the tranquility of nature, picnic under the shade of trees, or watch local wildlife. An ideal spot for relaxation and reconnecting with nature.", src: "https://raw.githubusercontent.com/ShuaibAfnanSk/resort_assests/main/park.jpg", svg:"https://raw.githubusercontent.com/ShuaibAfnanSk/resort_assests/main/park.svg"},
-    {name: "Golf", desc: "Enjoy a round of golf on world-class courses with breathtaking scenery. Challenge yourself on meticulously maintained greens, take in the panoramic views, and relax in luxurious clubhouses. Perfect for all golfers.", src: "https://raw.githubusercontent.com/ShuaibAfnanSk/resort_assests/main/golf.jpg", svg:"https://raw.githubusercontent.com/ShuaibAfnanSk/resort_assests/main/golfing.svg"},
-    {name: "Boating", desc: "Experience thrilling jet boat rides on crystal-clear waters. Feel the adrenaline rush as you speed across the waves, explore hidden coves, and enjoy the stunning coastal scenery. An adventure perfect for thrill-seekers.", src: "https://raw.githubusercontent.com/ShuaibAfnanSk/resort_assests/main/jet.jpg", svg:"https://raw.githubusercontent.com/ShuaibAfnanSk/resort_assests/main/jet.svg"},
-    {name: "Surfing", desc: "Catch the waves and enjoy exhilarating surfing experiences. Whether you're a seasoned surfer or a beginner, you'll find perfect spots to ride the waves. Surf schools and expert instructors are available for guidance.", src: "https://raw.githubusercontent.com/ShuaibAfnanSk/resort_assests/main/surf.jpg", svg:"https://raw.githubusercontent.com/ShuaibAfnanSk/resort_assests/main/surf.svg"},
-    {name: "Diving", desc: "Discover vibrant marine life and stunning coral reefs while diving. Explore underwater caves, shipwrecks, and colorful reefs teeming with exotic fish and marine creatures. Suitable for divers of all skill levels.", src: "https://raw.githubusercontent.com/ShuaibAfnanSk/resort_assests/main/scuba.jpg", svg:"https://raw.githubusercontent.com/ShuaibAfnanSk/resort_assests/main/diving.svg"}
-]
+    {
+        name: "Surfing",
+        desc: "Catch waves with surfing lessons for all skill levels, guided by expert instructors.",
+        src: "https://raw.githubusercontent.com/ShuaibAfnanSk/resort_assests/main/surf.jpg"
+    },
+    {
+        name: "Diving",
+        desc: "Explore vibrant reefs, underwater caves, and shipwrecks with diverse marine life for all divers.",
+        src: "https://raw.githubusercontent.com/ShuaibAfnanSk/resort_assests/main/scuba.jpg"
+    },
+    {
+        name: "Boating",
+        desc: "Experience thrilling jet boat rides, explore hidden coves, and enjoy stunning coastal scenery.",
+        src: "https://raw.githubusercontent.com/ShuaibAfnanSk/resort_assests/main/jet.jpg"
+    },
+    {
+        name: "Golf",
+        desc: "Play golf on stunning courses with breathtaking views and luxurious clubhouses for relaxation.",
+        src: "https://raw.githubusercontent.com/ShuaibAfnanSk/resort_assests/main/golf.jpg"
+    },
+    
+    {
+        name: "Park",
+        desc: "Stroll through lush greenery, enjoy picnics, or watch wildlife in tranquil surroundings.",
+        src: "https://raw.githubusercontent.com/ShuaibAfnanSk/resort_assests/main/park.jpg"
+    },
+   
+];
 
 export default activities;

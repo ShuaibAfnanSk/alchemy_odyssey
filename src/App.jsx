@@ -4,12 +4,11 @@ import './index.css';
 import Index from './pages/Index';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import Resorts from './pages/Resorts';
-import Countries from './pages/Countries';
 import SingleResort from './pages/SingleResort';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import Footer from './components/Footer';
 import Gallery from './pages/Gallery';
+import Footer from './components/Footer';
 
 function ScrollToTopOnMount() {
   const location = useLocation();
@@ -28,7 +27,6 @@ function App() {
       <Navbar />
       <Routes>
         <Route exact path='/' element={<Index />} />
-        <Route path='countries' element={<Countries />} />
         <Route path='resorts' element={<Resorts />} />
         <Route path='resort/:id' element={<SingleResort />} />
         <Route exact path='/gallery' element={<Gallery />} />

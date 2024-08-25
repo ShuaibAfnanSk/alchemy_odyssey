@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import resorts from "../data/resorts";
 import ResortCard from "./ResortCard";
 
@@ -13,6 +14,7 @@ const ResortIndex = () => {
                     <ResortCard item={r} />
                 ))}
             </div>
+            <button className="button self-center"><Link to={"/about"}>explore</Link></button>
         </section>
     );
 }

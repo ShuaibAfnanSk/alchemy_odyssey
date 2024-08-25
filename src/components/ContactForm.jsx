@@ -8,9 +8,9 @@ const icons = [insta, twitter, fb, linkedin]
 
 const ContactForm = () => {
     return (
-        <div className="relative w-full h-[675px]">
-            <img src={contact} className="absolute w-[85%] sm:w-[60%] clippath-br h-[600px] object-cover bottom-0" alt="" />
-            <div className="gap-2 md:bg-[rgba(255,255,255,0.1)] md:backdrop-blur-[25px] md:gap-0 md:p-10 md:border-[2px] w-fit md:w-[700px] md:items-center md:justify-between md:h-[400px] flex flex-col md:flex-row absolute right-4 md:border-[#97c1a9] md:rounded-xl">
+        <div className="relative w-full h-[675px] flex justify-center items-center">
+            <img src={contact} className="absolute w-[85%] sm:w-[60%] clippath-br h-[600px] object-cover left-0 bottom-0" alt="" />
+            <div className="gap-2 md:bg-[rgba(255,255,255,0.1)] md:backdrop-blur-[25px] md:gap-0 md:p-10 md:border-[2px] w-fit md:w-[700px] md:items-center md:justify-between md:h-[400px] flex flex-col md:flex-row absolute md:top-10 md:right-4 md:border-[#97c1a9] md:rounded-xl">
                 <form className="flex blurred flex-col gap-4 md:gap-0 h-full md:justify-between">
                     <input type="text" className="input" placeholder="John Doe" name="" id="" />
                     <input type="email" className="input" placeholder="john.doe@gmail.com" name="" id="" />

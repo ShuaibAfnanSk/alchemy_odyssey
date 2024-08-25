@@ -8,8 +8,8 @@ const AboutIndex = () => {
             </div>
             <div className="what-right">
                 <div className="what-box">
+                    <img className="polos" src="https://raw.githubusercontent.com/ShuaibAfnanSk/resort_assests/main/shot-f.jpg" alt="" />
                     <img className="polos" src="https://raw.githubusercontent.com/ShuaibAfnanSk/resort_assests/main/shot-i.jpg" alt="" />
-                    <img className="polos" src="https://raw.githubusercontent.com/ShuaibAfnanSk/resort_assests/main/shot-n.jpg" alt="" />
                     <img className="polos" src="https://raw.githubusercontent.com/ShuaibAfnanSk/resort_assests/main/shot-s.jpg" alt="" />
                 </div>
             </div>
