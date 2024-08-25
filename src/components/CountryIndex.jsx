@@ -31,6 +31,24 @@ const CountryIndex = () => {
         sliderRef.current.scrollLeft = scrollLeft - walk;
     };
 
+    const handleTouchStart = (e) => {
+        setIsDragging(true);
+        setStartX(e.touches[0].pageX - sliderRef.current.offsetLeft);
+        setScrollLeft(sliderRef.current.scrollLeft);
+    };
+
+    const handleTouchMove = (e) => {
+        if (!isDragging) return;
+        e.preventDefault();
+        const x = e.touches[0].pageX - sliderRef.current.offsetLeft;
+        const walk = (x - startX) * 1;
+        sliderRef.current.scrollLeft = scrollLeft - walk;
+    };
+
+    const handleTouchEnd = () => {
+        setIsDragging(false);
+    };
+
     return (
         <section className="flex flex-col gap-12">
             <div className="flex flex-col items-center">
@@ -42,6 +60,9 @@ const CountryIndex = () => {
                     onMouseDown={handleMouseDown}
                     onMouseLeave={handleMouseLeave}
                     onMouseUp={handleMouseUp}
+                    onTouchStart={handleTouchStart}
+                    onTouchMove={handleTouchMove}
+                    onTouchEnd={handleTouchEnd}
                     onMouseMove={handleMouseMove}
                 >
                     {countries.map((c) => (
