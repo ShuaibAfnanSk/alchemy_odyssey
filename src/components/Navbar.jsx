@@ -29,7 +29,7 @@ const Navbar = () => {
 
     return (
         <header
-            className={`w-full items-center px-10 h-[100px] fixed z-50 flex justify-between transition-colors duration-300 ${scrollY > 200 ? 'bg-[rgba(0,0,0,0.1)] backdrop-blur-[15px] rounded-b-[1.5rem]' : ''
+            className={`w-full items-center px-10 h-[100px] fixed z-50 flex justify-between transition-colors duration-300 ${scrollY > 200 ? 'bg-[rgba(255,255,255)] border-b border-[#97c1a9]' : ''
                 }`}
         >
             <Link to={"/"}>

@@ -31,8 +31,8 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="bg-[#97c1a9] px-4 sm:px-10 py-5 justify-between flex items-center gap-4">
-                <img src={logo} className="w-[50px] h-[50px] self-start" alt="" />
+            <div className="bg-[#97c1a9] px-4 sm:px-10 h-[100px] flex justify-between items-center gap-4">
+                <img src={logo} className="w-[50px] h-[50px]" alt="" />
                 <p className="text-sm sm:text-base">© {date} alchemy all rights reserved</p>
             </div>
         </footer>
