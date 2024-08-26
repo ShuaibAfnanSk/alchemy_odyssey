@@ -15,8 +15,8 @@ const Footer = () => {
 
     return (
         <footer className="border-t border-[#97c1a9] mt-20">
-            <div className="flex justify-between flex-wrap items-center gap-10 px-4 sm:px-10 py-8">
-                <ul>
+            <div className="flex sm:flex-row flex-col sm:justify-between flex-wrap items-center gap-10 px-4 sm:px-10 py-8">
+                <ul className="self-start">
                     <li>Home</li>
                     <li>Resorts</li>
                     <li>Gallery</li>
@@ -31,14 +31,9 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="bg-[#97c1a9] flex-wrap px-4 sm:px-10 py-5 flex items-center gap-4 justify-between">
-                <img src={logo} className="w-[50px] h-[50px]" alt="" />
-                <p>© {date} alchemy all rights reserved</p>
-                <div className="flex gap-2">
-                    {icons.map((i) => (
-                        <img src={i} className="" alt="" />
-                    ))}
-                </div>
+            <div className="bg-[#97c1a9] px-4 sm:px-10 py-5 justify-between flex items-center gap-4">
+                <img src={logo} className="w-[50px] h-[50px] self-start" alt="" />
+                <p className="text-sm sm:text-base">© {date} alchemy all rights reserved</p>
             </div>
         </footer>
     );

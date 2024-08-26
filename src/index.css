@@ -456,49 +456,62 @@ textarea:focus {
     width: 100%;
 }
 
-@media (max-width:900px) {
-    .tail {
-        width: 90%;
-    }
+.contact {
+    display: flex;
+    width: 100%;
 }
 
-@media (max-width:800px) {
-    .block {
-        gap: 2rem;
-    }
+.contactLeft {
+    flex: 4;
+    display: flex;
+    justify-content: center;
 }
 
-@media (max-width:700px) {
-    .tail {
-        width: 100%;
-    }
-
-    .menu {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background-color: #f8f8f8;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        left: 0;
-        transition: 1s ease;
-        z-index: 999999;
-    }
-
-    .nav {
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    .close {
-        display: block;
-    }
-
-    .open {
-        display: block;
-    }
+.contact-box {
+    display: flex;
+    flex-direction: column;
 }
+
+.contact-box h5 {
+    font-size: 1.1em;
+}
+
+.contact-box h5 span {
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.contactRight {
+    flex: 6;
+    display: flex;
+    justify-content: center;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+.contactForm input {
+    background-color: #fff;
+    border-bottom: 3px solid #f0f2f5;
+    padding: 1.5em;
+}
+
+.contactForm textarea {
+    background-color: #fff;
+    padding: 1.5em;
+    border-bottom: 3px solid #f0f2f5;
+}
+
+.contactForm button {
+    align-self: flex-end;
+    padding: .75em 2em;
+    background-color: #000;
+    font-size: 1.25em;
+    color: #fff;
+}
+
 
 @media (max-width:1100px) {
     .shot {
@@ -509,7 +522,7 @@ textarea:focus {
     }
 }
 
-@media (max-width:1000px) { 
+@media (max-width:1000px) {
     .who-we {
         flex-direction: column;
     }
@@ -520,13 +533,25 @@ textarea:focus {
         overflow: hidden;
         padding-top: 1rem;
     }
+
     .work-left p {
         width: 100%;
+        padding: 0 2rem;
+    }
+
+    .contact {
+        flex-direction: column;
+        gap: 3em;
+        align-items: flex-start;
         padding: 0 2rem;
     }
 }
 
 @media (max-width:900px) {
+    .tail {
+        width: 90%;
+    }
+
     .shot:nth-child(1) {
         transform: translateX(50px) translateY(50px);
     }
@@ -537,6 +562,16 @@ textarea:focus {
 
     .shot:nth-child(3) {
         transform: translateX(-50px);
+    }
+}
+
+@media (max-width:800px) {
+    .block {
+        gap: 2rem;
+    }
+
+    .contactForm {
+        width: 400px;
     }
 }
 
@@ -585,6 +620,36 @@ textarea:focus {
         width: 90%;
         height: 100%;
     }
+
+    .tail {
+        width: 100%;
+    }
+
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #f8f8f8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        transition: 1s ease;
+        z-index: 999999;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .close {
+        display: block;
+    }
+
+    .open {
+        display: block;
+    }
 }
 
 @media (max-width:640px) {
@@ -607,10 +672,6 @@ textarea:focus {
     }
 }
 
-@media (max-width:600px) {
-    
-}
-
 @media (max-width:550px) {
     .flips:nth-child(1) {
         width: 85%;
@@ -631,6 +692,14 @@ textarea:focus {
     .polos:nth-child(3) {
         width: 200px;
         height: 200px;
+    }
+
+    .contactRight {
+        width: 100%;
+    }
+
+    .contactForm {
+        width: 100%;
     }
 }
 
@@ -658,5 +727,9 @@ textarea:focus {
 
     .shot:nth-child(3) {
         transform: translateX(-25px);
+    }
+
+    .contact {
+        padding: 0 1rem;
     }
 }
