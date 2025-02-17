@@ -1,5 +1,4 @@
 import ResortCard from "../components/ResortCard";
-import Subscribe from "../components/Subscribe";
 import resorts from "../data/resorts";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -25,7 +24,6 @@ const Resorts = () => {
                     ))}
                 </div>
             </div>
-            {/* <Subscribe /> */}
         </section>
     );
 }
