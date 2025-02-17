@@ -1,6 +1,7 @@
 import resorts from "../data/resorts";
 import styled from "styled-components";
 import Subscribe from "../components/Subscribe";
+import svg from "../assets/resort.svg";
 
 const Fixed = styled.div`
     background-position: center;
@@ -23,11 +24,16 @@ const SingleResort = () => {
             <Fixed image={resort.mainImage} />
             <div className="flex flex-col gap-16 px-4 sm:px-10">
                 <div className="flex justify-between flex-wrap gap-8">
-                    <div className="w-[300px] rounded-lg flex flex-col gap-12 bg-[#97c1a9] h-fit p-6">
-                        <h3 className="text-3xl text-white">{resort.name}</h3>
-                        <div className="border-y border-white py-5 text-white">
-                            <p>Country - {resort.country}</p>
-                            <p>Price - {resort.package}</p>
+                    <div className="w-[300px] border overflow-hidden border-[rgba(0,0,0,0.15)] rounded-xl relative flex flex-col h-[325px] justify-between p-6">
+                        <div className="absolute bottom-[-25px] right-[-25px]">
+                            <img className="w-[100px] h-[100px]" src={svg} alt="" />
+                        </div>
+                        <div className="flex flex-col gap-4">
+                            <h3 className="text-3xl font-semibold">{resort.name}</h3>
+                            <div className="">
+                                <p>Country - {resort.country}</p>
+                                <p>Price - {resort.package}</p>
+                            </div>
                         </div>
                         <div className="flex gap-2 flex-wrap">
                             {activities.map((a) => (

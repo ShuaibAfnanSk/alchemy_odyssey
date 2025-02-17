@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Navbar from './components/Navbar';
 import './index.css';
 import Index from './pages/Index';
@@ -20,10 +20,47 @@ function ScrollToTopOnMount() {
 
 function App() {
 
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const handleLoad = () => {
+      setTimeout(() => {
+        setLoading(false);
+      }, 500);
+    };
+
+    if (document.readyState === "complete") {
+      handleLoad();
+    } else {
+      window.addEventListener("load", handleLoad);
+    }
+    
+  }, []);
+
+
   return (
 
     <Router>
       <ScrollToTopOnMount />
+
+      {/* Loader */}
+      {loading && (
+        <div className="loader-container">
+          <div className="loader">
+            <div class="cloud front">
+              <span class="left-front"></span>
+              <span class="right-front"></span>
+            </div>
+            <span class="sun sunshine"></span>
+            <span class="sun"></span>
+            <div class="cloud back">
+              <span class="left-back"></span>
+              <span class="right-back"></span>
+            </div>
+          </div>
+        </div>
+      )}
+
       <Navbar />
       <Routes>
         <Route exact path='/' element={<Index />} />

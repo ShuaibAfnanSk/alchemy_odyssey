@@ -7,21 +7,17 @@ const Navbar = () => {
     const [open, setOpen] = useState(false);
     const [scrollY, setScrollY] = useState(0);
 
-    // Function to toggle the menu open/close
     const handleOpen = () => {
         setOpen(prev => !prev);
     };
 
-    // Function to handle scroll and update scrollY state
     const handleScroll = () => {
         setScrollY(window.scrollY);
     };
 
     useEffect(() => {
-        // Add scroll event listener on component mount
         window.addEventListener('scroll', handleScroll);
 
-        // Cleanup the event listener on component unmount
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };

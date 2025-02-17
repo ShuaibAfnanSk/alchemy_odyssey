@@ -1,10 +1,17 @@
 import AboutIndex from "../components/AboutIndex";
 import AboutWe from "../components/AboutWe";
-import Subscribe from "../components/Subscribe";
 import Team from "../components/Team";
 import Testimonials from "../components/Testimonials";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const About = () => {
+
+    useEffect(() => {
+        Aos.init({ duration: 1000 })
+    }, []);
+
     return (
         <section>
             <div className="about" />
@@ -14,7 +21,7 @@ const About = () => {
                 <Team />
                 <Testimonials />
             </div>
-            <Subscribe />
+            {/* <Subscribe /> */}
         </section>
     );
 }

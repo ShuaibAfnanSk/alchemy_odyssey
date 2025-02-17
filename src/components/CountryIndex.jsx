@@ -1,8 +1,15 @@
 import { useState, useRef } from "react";
 import countries from "../data/countries";
 import CountryCard from "./CountryCard";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const CountryIndex = () => {
+
+    useEffect(() => {
+        Aos.init({ duration: 1000 })
+    }, []);
 
     const [isDragging, setIsDragging] = useState(false);
     const [startX, setStartX] = useState(0);
@@ -52,8 +59,8 @@ const CountryIndex = () => {
     return (
         <section className="flex flex-col gap-12">
             <div className="flex flex-col items-center">
-                <h4>select from countries</h4>
-                <h3 className="text-5xl">Countries</h3>
+                <h4 data-aos='fade-up'>select from countries</h4>
+                <h3 data-aos='fade-up' className="text-5xl">Countries</h3>
             </div>
             <div className="h-[500px] flex my-10">
                 <div className="flex gap-8 overflow-hidden px-4 sm:px-10" ref={sliderRef}
