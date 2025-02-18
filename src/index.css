@@ -11,7 +11,7 @@
 
 body {
     color: #000;
-    background-color: #efefef;
+    background-color: #f8f8f8;
 }
 
 .countrycard:nth-child(even) {
@@ -171,10 +171,6 @@ input:focus {
 
 textarea:focus {
     outline: none;
-}
-
-.clippath-br {
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0 100%)
 }
 
 .who-we {
@@ -509,14 +505,6 @@ textarea:focus {
         width: 100%;
         height: 100%;
     }
-
-    .clipbox {
-        clip-path: polygon(0 0,
-                100% 0,
-                100% 100%,
-                40px 100%,
-                0 calc(100% - 40px));
-    }
 }
 
 @media (max-width:700px) {
@@ -546,7 +534,7 @@ textarea:focus {
         position: fixed;
         width: 100%;
         height: 100vh;
-        background-color: #f8f8f8;
+        background-color: #eaeaea;
         display: flex;
         justify-content: center;
         align-items: center;

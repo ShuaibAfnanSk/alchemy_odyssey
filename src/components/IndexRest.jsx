@@ -23,7 +23,7 @@ const IndexRest = () => {
                     <ParallaxBanner className="w-full h-full object-cover" layers={[{ image: indexexplore }]} />
                 </div>
                 <div className="flex basis-[50%] box absolute p-4 md:relative items-end md:items-center justify-start md:justify-center">
-                    <div data-aos='fade-up' className="flex bg-[#f8f8f8] p-4 md:relative md:p-0 w-[90%] md:w-fit h-fit clippath-br md:bg-none flex-col gap-6">
+                    <div data-aos='fade-up' className="flex bg-[#f8f8f8] p-4 md:relative md:p-0 w-[90%] md:w-fit h-fit md:bg-none flex-col gap-6">
                         <p className="text-sm w-full lg:text-base md:w-[350px] lg:w-[450px]">Discover our finest resorts, each offering luxury, comfort, and stunning views. Whether a serene beach, cozy mountain, or tropical paradise, experience world-class amenities, exquisite dining, and rejuvenating activities. Perfect for romantic getaways or family vacations, our top destinations promise unparalleled relaxation and adventure.</p>
                     </div>
                 </div>
@@ -38,7 +38,7 @@ const IndexRest = () => {
                         <ParallaxBanner data-aos='fade-left' className="w-full h-full object-cover" layers={[{ image: aboutexplore }]} />
                     </div>
                     <div className="flex basis-[50%] box absolute right-0 p-4 md:relative items-end md:items-center justify-end md:justify-center">
-                        <div className="flex bg-[#f8f8f8] p-4 md:relative clipbox md:p-0 w-[90%] md:w-fit h-fit md:bg-none flex-col gap-6">
+                        <div className="flex bg-[#f8f8f8] p-4 md:relative md:p-0 w-[90%] md:w-fit h-fit md:bg-none flex-col gap-6">
                             <p data-aos='fade-up' className="w-full md:w-[350px]">We provide exclusive resort packages for luxurious getaways, ensuring unforgettable experiences in the world's most stunning destinations.</p>
                             <button data-aos='fade-up' className="button self-end md:self-auto"><Link to={"/about"}>Know More</Link></button>
                         </div>

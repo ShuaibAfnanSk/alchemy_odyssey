@@ -31,7 +31,7 @@ const Team = () => {
                 </div>
                 <div className="flex flex-wrap gap-6 justify-center">
                     {team.map((t, id) => (
-                        <div data-aos='fade-up' key={id} className="flex shadow-custom gap-6 sm:w-[300px] h-[400px] clippath-br overflow-hidden p-8 relative bg-white items-end">
+                        <div data-aos='fade-up' key={id} className="flex shadow-custom gap-6 sm:w-[300px] h-[400px] overflow-hidden p-8 relative bg-white items-end">
                             <img src={t.image} className="object-cover left-[-2rem] top-[-2rem] absolute w-[225px] h-[225px] rounded-[50%]" alt="" />
                             <div className="flex flex-col gap-1">
                                 <h3 className="text-xl">{t.name}</h3>

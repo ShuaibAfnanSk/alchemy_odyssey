@@ -18,7 +18,7 @@ const Resorts = () => {
                     <h4 data-aos='fade-up'>find your escape</h4>
                     <h3 data-aos='fade-up' className="text-5xl">Resorts</h3>
                 </div>
-                <div className="flex flex-wrap gap-4 justify-center">
+                <div className="flex w-full px-6 flex-wrap gap-4 justify-center">
                     {resorts.map((r) => (
                         <ResortCard item={r} />
                     ))}
