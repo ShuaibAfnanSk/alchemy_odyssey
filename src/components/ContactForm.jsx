@@ -19,7 +19,7 @@ const ContactForm = () => {
                         <input type="email" name="from_email" placeholder="email" id="" />
                         <input type="text" name="subject" placeholder="subject" id="" />
                         <textarea name="message" id="" cols="30" rows="7" placeholder="message" />
-                        <button type="submit">Send</button>
+                        <button type="submit" className="bg-mintish">Send</button>
                     </form>
                 </div>
             </div>

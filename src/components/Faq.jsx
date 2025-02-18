@@ -2,6 +2,7 @@ import { useState } from "react";
 import faqs from "../data/faq";
 import minus from "../assets/minus.svg";
 import plus from "../assets/plus.svg";
+import beach from "../assets/beach.svg";
 
 const Faq = () => {
 
@@ -26,8 +27,9 @@ const Faq = () => {
                                 <img alt="icon" className="" src={show === id ? (minus) : (plus)} />
                             </div>
                         </div>
-                        <div style={show === id ? { display: "block" } : { display: "none" }} className="text">
+                        <div style={show === id ? { display: "block" } : { display: "none" }} className="relative text overflow-hidden">
                             <p className="text-sm text-[rgba(0,0,0,0.8)] sm:text-base sm:w-[400px]">{f.answer}</p>
+                            <img src={beach} className="absolute w-[100px] translate-y-[15px] h-[100px] bottom-0 right-0" alt="" />
                         </div>
                     </div>
                 ))}

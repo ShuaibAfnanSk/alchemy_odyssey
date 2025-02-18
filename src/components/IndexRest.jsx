@@ -45,8 +45,8 @@ const IndexRest = () => {
                     </div>
                 </div>
             </div>
-            <CountryIndex />
             <ResortIndex />
+            <CountryIndex />
             <Activities />
             {/* <Subscribe /> */}
         </section>

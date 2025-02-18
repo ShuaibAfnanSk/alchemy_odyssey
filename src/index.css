@@ -11,20 +11,7 @@
 
 body {
     color: #000;
-    background-color: #f8f8f8;
-}
-
-.subscribe {
-    background-image: url("./assets/country.jpg");
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-}
-
-.glass {
-    background-color: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(25px);
+    background-color: #efefef;
 }
 
 .countrycard:nth-child(even) {
@@ -61,34 +48,13 @@ body {
     border-top: 2px solid #97c1a9;
 }
 
-.shot {
-    width: 300px;
-    height: 350px;
-    object-fit: cover;
-    filter: brightness(0.85);
-}
-
-.shot:nth-child(1) {
-    align-self: flex-start;
-    transform: translateX(100px) translateY(50px);
-}
-
-.shot:nth-child(2) {
-    transform: translateY(200px) translateX(125px);
-}
-
-.shot:nth-child(3) {
-    align-self: flex-start;
-    transform: translateX(-100px);
-}
-
 .gallery {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
     height: 100vh;
-    background-image: url("./assets/gallery.jpg");
+    background-image: url("./assets/country.jpg");
     background-repeat: no-repeat;
 }
 
@@ -211,14 +177,6 @@ textarea:focus {
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0 100%)
 }
 
-.clippath-bl {
-    clip-path: polygon(0 0,
-            100% 0,
-            100% 100%,
-            40px 100%,
-            0 calc(100% - 40px));
-}
-
 .who-we {
     display: flex;
     min-height: 100vh;
@@ -328,10 +286,6 @@ textarea:focus {
     justify-content: center;
     align-items: center;
 }
-
-.clipbox {}
-
-.blurred {}
 
 .section {
     display: flex;
@@ -504,20 +458,9 @@ textarea:focus {
 
 .contactForm button {
     align-self: flex-end;
-    padding: .75em 2em;
-    background-color: #000;
+    padding: .5em 1.5em;
     font-size: 1.25em;
     color: #fff;
-}
-
-
-@media (max-width:1100px) {
-    .shot {
-        width: 250px;
-        height: 300px;
-        object-fit: cover;
-        filter: brightness(0.85);
-    }
 }
 
 @media (max-width:1000px) {
@@ -549,18 +492,6 @@ textarea:focus {
     .tail {
         width: 90%;
     }
-
-    .shot:nth-child(1) {
-        transform: translateX(50px) translateY(50px);
-    }
-
-    .shot:nth-child(2) {
-        transform: translateY(200px) translateX(50px);
-    }
-
-    .shot:nth-child(3) {
-        transform: translateX(-50px);
-    }
 }
 
 @media (max-width:800px) {
@@ -585,18 +516,6 @@ textarea:focus {
                 100% 100%,
                 40px 100%,
                 0 calc(100% - 40px));
-    }
-
-    .blurred {
-        background-color: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(25px);
-        border-radius: 12px;
-        padding: 2rem;
-    }
-
-    .shot {
-        width: 150px;
-        height: 200px;
     }
 }
 
@@ -702,29 +621,12 @@ textarea:focus {
 }
 
 @media (max-width:500px) {
-    .blurred {
-        width: 300px;
-    }
-
     .input {
         width: 100%;
     }
 
     .textarea {
         width: 100%;
-    }
-
-    .shot:nth-child(1) {
-        transform: translateX(25px) translateY(50px);
-    }
-
-    .shot:nth-child(2) {
-        position: absolute;
-        left: 30%;
-    }
-
-    .shot:nth-child(3) {
-        transform: translateX(-25px);
     }
 
     .contact {

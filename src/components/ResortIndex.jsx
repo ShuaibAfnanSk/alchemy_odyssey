@@ -23,7 +23,7 @@ const ResortIndex = () => {
                     <ResortCard item={r} />
                 ))}
             </div>
-            <button data-aos='fade-up' className="button self-center"><Link to={"/about"}>explore</Link></button>
+            <button data-aos='fade-up' className="button self-center"><Link to={"/resorts"}>explore</Link></button>
         </section>
     );
 }

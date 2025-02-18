@@ -15,7 +15,7 @@ export default {
       },
       fontFamily: {
         os : ["anton"],
-        zig: ["Parisienne"]
+        zig: ["Parisienne"],
       },
       backgroundColor: {
         "mintish" : "#97c1a9"
