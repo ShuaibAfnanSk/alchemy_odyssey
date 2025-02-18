@@ -22,10 +22,8 @@ const Faq = () => {
                     <div key={id} className="container">
                         <div className="block shadow-custom">
                             <p className="text-sm sm:text-base">{f.question}</p>
-                            <div>
-                                <div onClick={() => handleShow(id)} className="action">
-                                    <img alt="icon" src={show === id ? (minus) : (plus)} />
-                                </div>
+                            <div onClick={() => handleShow(id)} className="action">
+                                <img alt="icon" className="" src={show === id ? (minus) : (plus)} />
                             </div>
                         </div>
                         <div style={show === id ? { display: "block" } : { display: "none" }} className="text">

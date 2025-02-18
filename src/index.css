@@ -369,6 +369,7 @@ textarea:focus {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .subscriber {
@@ -392,8 +393,8 @@ textarea:focus {
 }
 
 .action img {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
 }
 
 .text {
@@ -401,8 +402,6 @@ textarea:focus {
     overflow: hidden;
     position: relative;
 }
-
-.menu {}
 
 .nav {
     display: flex;
@@ -444,7 +443,6 @@ textarea:focus {
     position: sticky;
     top: 8rem;
     width: 90%;
-    filter: brightness(0.75);
 }
 
 .card:nth-child(2) {
@@ -734,17 +732,6 @@ textarea:focus {
     }
 }
 
-.title {
-    font-size: 22vw;
-    font-weight: 900;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.15);
-    font-family: 'anton';
-    z-index: 1;
-    position: absolute;
-}
-
-/* From Uiverse.io by zanina-yassine */
 .loader-container {
     position: fixed;
     top: 0;

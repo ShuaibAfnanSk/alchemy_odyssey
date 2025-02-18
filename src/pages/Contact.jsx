@@ -7,7 +7,7 @@ const Contact = () => {
         <section className="flex flex-col gap-16">
             <ContactForm />
             <Faq />
-            <Subscribe />
+            {/* <Subscribe /> */}
         </section>
     );
 }
