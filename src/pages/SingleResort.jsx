@@ -1,6 +1,5 @@
 import resorts from "../data/resorts";
 import styled from "styled-components";
-import Subscribe from "../components/Subscribe";
 import svg from "../assets/resort.svg";
 
 const Fixed = styled.div`
@@ -57,7 +56,6 @@ const SingleResort = () => {
                     </div>
                 </div>
             </div>
-            <Subscribe />
         </section >
     );
 }

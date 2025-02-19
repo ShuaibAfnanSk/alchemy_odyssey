@@ -1,4 +1,3 @@
-import Subscribe from "../components/Subscribe";
 import countries from "../data/countries";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -51,7 +50,6 @@ const Gallery = () => {
                     </div>
                 </div>
             </div>
-            {/* <Subscribe /> */}
         </section>
     );
 }

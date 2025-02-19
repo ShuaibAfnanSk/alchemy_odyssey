@@ -15,13 +15,12 @@ const About = () => {
     return (
         <section>
             <div className="about" />
-            <div className="rounded-[4rem] flex flex-col gap-16 bg-[#f8f8f8] move-up">
+            <div className="rounded-[4rem] flex flex-col gap-16 bg-[#f8f8f8] move-up overflow-hidden">
                 <AboutWe />
                 <AboutIndex />
                 <Team />
                 <Testimonials />
             </div>
-            {/* <Subscribe /> */}
         </section>
     );
 }

@@ -4,11 +4,11 @@ import indexexplore from "../assets/about-index.jpg";
 import ResortIndex from "./ResortIndex";
 import CountryIndex from "./CountryIndex";
 import Activities from "./Activities";
-import Subscribe from "./Subscribe";
 import { Link } from "react-router-dom";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
+import Partners from "./Partners";
 
 const IndexRest = () => {
 
@@ -48,7 +48,7 @@ const IndexRest = () => {
             <ResortIndex />
             <CountryIndex />
             <Activities />
-            {/* <Subscribe /> */}
+            <Partners />
         </section>
     );
 }
