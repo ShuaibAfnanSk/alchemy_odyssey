@@ -1,4 +1,5 @@
 import ContactForm from "../components/ContactForm";
+import Ender from "../components/Ender";
 import Faq from "../components/Faq";
 
 const Contact = () => {

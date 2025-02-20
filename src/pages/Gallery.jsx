@@ -2,6 +2,7 @@ import countries from "../data/countries";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
+import Ender from "../components/Ender";
 
 // const images = countries.reduce((acc, item) => {
 //     return acc.concat(item.gallery);
@@ -17,7 +18,7 @@ const Gallery = () => {
     return (
         <section className="flex flex-col">
             <div className="gallery" />
-            <div className="flex flex-col gap-12 px-2 sm:px-10 items-center bg-[#f8f8f8] move-up pt-16 rounded-t-[4rem]">
+            <div className="flex flex-col gap-12 px-4 sm:px-10 items-center bg-[#f8f8f8] move-up pt-16 rounded-t-[4rem]">
                 <div className="flex flex-col gap-2 items-center">
                     <h4 data-aos='fade-bottom'>some camera shots</h4>
                     <h3 data-aos='fade-bottom' className="text-5xl">Gallery</h3>

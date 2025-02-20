@@ -18,7 +18,7 @@ const AboutWe = () => {
             </div>
             <div className="who-right flex flex-col items-center gap-8 justify-center">
                 <h3 className="text-4xl font-os" data-aos='fade-up'>Who we are</h3>
-                <p className="px-6 sm:px-0 sm:w-[450px] sm:text-justify" data-aos='fade-up'>We are a global resort management company dedicated to providing outstanding guest experiences in diverse locations. Our portfolio includes premier resorts in breathtaking destinations worldwide. Committed to excellence and sustainability, our team of hospitality experts strives to create cherished memories for guests, embracing the culture and beauty of each locale.</p>
+                <p className="sm:w-[450px] sm:text-justify" data-aos='fade-up'>We are a global resort management company dedicated to providing outstanding guest experiences in diverse locations. Our portfolio includes premier resorts in breathtaking destinations worldwide. Committed to excellence and sustainability, our team of hospitality experts strives to create cherished memories for guests, embracing the culture and beauty of each locale.</p>
             </div>
         </div>
     );

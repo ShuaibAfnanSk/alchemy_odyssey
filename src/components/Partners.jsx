@@ -24,7 +24,7 @@ const Partners = () => {
     }, []);
 
     return (
-        <section className='px-4 sm:px-10 mb-16 flex flex-col gap-16 overflow-hidden'>
+        <section className='px-4 sm:px-10 flex mb-16 flex-col gap-16 overflow-hidden'>
             <div className='sponsor-marquee-con flex flex-col gap-4'>
                 <div data-aos='fade' className='sponsor-marquee flex gap-4 items-center'>
                     <div className='flex gap-4'>

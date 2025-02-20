@@ -9,15 +9,15 @@ const icons = [insta, twitter, fb, linkedin];
 
 const Team = () => {
     return (
-        <div className="flex flex-col gap-12 py-10 px-4">
+        <div className="flex flex-col gap-12">
             <div className="flex flex-col items-center">
                 <h4 data-aos='fade-up'>people behind odyssey</h4>
                 <h3 data-aos='fade-up' className="text-5xl">Team</h3>
             </div>
-            <div className="flex flex-col gap-10 items-center">
+            <div className="flex flex-col gap-6 items-center">
                 <div data-aos='fade-up' className="bg-white shadow-custom lg:h-[500px] flex flex-col items-center lg:items-end lg:flex-row gap-10 w-fit">
                     <img src={lead} className="w-[300px] lg:w-[400px] object-cover h-full" alt="" />
-                    <div className="px-4 sm:px-10 pb-10 flex items-center lg:items-start justify-end flex-col">
+                    <div className="px-6 sm:px-10 pb-10 flex items-center lg:items-start justify-end flex-col">
                         <div className="flex gap-4 mb-4">
                             {icons.map((i) => (
                                 <img src={i} className="w-[25px] cursor-pointer h-[25px]" alt="" />

@@ -1,6 +1,6 @@
 const ContactForm = () => {
     return (
-        <section className="flex flex-col gap-16 mt-[7rem]">
+        <section className="flex flex-col gap-16 mt-[7rem] px-4">
             <div className="flex flex-col items-center">
                 <h4>talk to us</h4>
                 <h3 className="text-5xl">Contact</h3>

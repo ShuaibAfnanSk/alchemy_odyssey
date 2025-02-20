@@ -9,6 +9,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
 import Partners from "./Partners";
+import Ender from "./Ender";
 
 const IndexRest = () => {
 

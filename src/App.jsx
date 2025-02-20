@@ -9,6 +9,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Gallery from './pages/Gallery';
 import Footer from './components/Footer';
+import Ender from './components/Ender';
 
 function ScrollToTopOnMount() {
   const location = useLocation();
@@ -70,6 +71,7 @@ function App() {
         <Route path='about' element={<About />} />
         <Route path='contact' element={<Contact />} />
       </Routes>
+      <Ender />
       <Footer />
     </Router>
 

@@ -22,33 +22,35 @@ const Testimonials = () => {
     }
 
     return (
-        <div className="flex flex-col gap-12 overflow-hidden">
+        <div className="flex flex-col gap-12">
             <div className="flex flex-col items-center">
                 <h4 data-aos='fade-up'>what people say</h4>
                 <h3 data-aos='fade-up' className="text-5xl">Testimonials</h3>
             </div>
             <div className="relative h-[400px]">
-                <div className="flex w-full px-5 justify-between top-[50%] absolute z-10">
-                    <button data-aos='fade-right' className="caret" onClick={() => handleSlider("left")}><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#ffffff" viewBox="0 0 256 256"><path d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"></path></svg></button>
-                    <button data-aos='fade-left' className="caret" onClick={() => handleSlider("right")}><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#ffffff" viewBox="0 0 256 256"><path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path></svg></button>
+                <div className="flex w-full justify-between top-[50%] absolute z-10">
+                    <button className="caret translate-x-[-25px]" onClick={() => handleSlider("left")}><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#ffffff" viewBox="0 0 256 256"><path d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"></path></svg></button>
+                    <button className="caret translate-x-[25px]" onClick={() => handleSlider("right")}><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#ffffff" viewBox="0 0 256 256"><path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path></svg></button>
                 </div>
-                <Slider slider={slider} className="flex px-4 sm:px-10 gap-4">
-                    {testimonial.map((t) => (
-                        <div data-aos='fade-up' className="min-w-[300px] h-[400px] relative bg-white p-8 flex flex-col justify-between">
-                            <img src={t.image} className="w-[150px] object-cover h-[150px] rounded-[50%] top-[-3rem] left-[-3rem]" alt="" />
-                            <img src={quote} className="w-[50px] h-[50px] absolute top-4 right-4" alt="" />
-                            <div className="flex flex-col gap-2">
-                                <div className="flex gap-1">
-                                    {Array(t.rating).fill().map((_, i) => (
-                                        <img className="w-[20px] h-[20px]" key={i} src={star} alt="star" />
-                                    ))}
+                <div className="overflow-hidden">
+                    <Slider slider={slider} className="flex gap-4">
+                        {testimonial.map((t) => (
+                            <div data-aos='fade-up' className="min-w-[300px] h-[400px] relative bg-white p-8 flex flex-col justify-between">
+                                <img src={t.image} className="w-[150px] object-cover h-[150px] rounded-[50%] top-[-3rem] left-[-3rem]" alt="" />
+                                <img src={quote} className="w-[50px] h-[50px] absolute top-4 right-4" alt="" />
+                                <div className="flex flex-col gap-2">
+                                    <div className="flex gap-1">
+                                        {Array(t.rating).fill().map((_, i) => (
+                                            <img className="w-[20px] h-[20px]" key={i} src={star} alt="star" />
+                                        ))}
+                                    </div>
+                                    <h3 className="text-xl">{t.name}</h3>
+                                    <p className="text-sm">{t.feedback}</p>
                                 </div>
-                                <h3 className="text-xl">{t.name}</h3>
-                                <p className="text-sm">{t.feedback}</p>
                             </div>
-                        </div>
-                    ))}
-                </Slider>
+                        ))}
+                    </Slider>
+                </div>
             </div>
         </div>
     );

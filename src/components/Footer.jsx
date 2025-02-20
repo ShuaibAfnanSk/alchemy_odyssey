@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import logo from "../assets/logo.svg";
 import insta from "../assets/insta.svg";
 import twitter from "../assets/twitter.svg";
@@ -15,7 +14,7 @@ const Footer = () => {
 
     return (
         <footer className="border-t border-[rgba(0,0,0,0.15)] rounded-t-[3rem]">
-            <div className="flex sm:flex-row flex-col sm:justify-between flex-wrap items-center gap-10 px-10 py-10">
+            <div className="flex md:flex-row flex-col sm:justify-between items-center w-full gap-10 px-4 sm:px-10 py-10">
                 <div className="flex flex-col gap-2 items-center">
                     <h3>Follow us on</h3>
                     <div className="flex items-center gap-2 text-xl">
@@ -25,11 +24,11 @@ const Footer = () => {
                         <div className="w-[50px] h-[50px] border border-[rgba(0,0,0,0.1)] bg-white rounded-full flex items-center justify-center"><i class="ph ph-linkedin-logo"></i></div>
                     </div>
                 </div>
-                <div className="flex flex-col gap-2 items-center">
+                <div className="flex flex-col gap-2 items-center w-full sm:w-fit">
                     <h3>Subscribe to our newsletter</h3>
-                    <div className="subscriber border border-[rgba(0,0,0,0.2)] w-[300px] sm:w-[325px]">
+                    <div className="subscriber border border-[rgba(0,0,0,0.2)] sm:w-[400px] w-full">
                         <input type="text" className="text-sm sm:text-base" placeholder="john.doe@gmail.com" />
-                        <button className="button">submit</button>
+                        <button className="button">Submit</button>
                     </div>
                 </div>
             </div>
