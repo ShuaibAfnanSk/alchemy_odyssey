@@ -1,5 +1,5 @@
 const faqs = [
-    {question: "What amenities are available at the resort?", answer: "Our resorts offer a wide range of amenities, including swimming pools, spas, fitness centers, restaurants, and recreational activities."},
+    {question: "Amenities are available at resort?", answer: "Our resorts offer a wide range of amenities, including swimming pools, spas, fitness centers, restaurants, and recreational activities."},
     {question: "How can I make a reservation?", answer: "Reservations can be made online through our website, via our mobile app, or by contacting our reservation team directly."},
     {question: "Are there family-friendly activities?", answer: "Yes, we provide a variety of family-friendly activities such as kids' clubs, family pools, and organized excursions suitable for all ages."},
     {question: "Do you offer airport transportation?", answer: "Yes, we offer convenient airport transportation services. Please arrange this service in advance when booking your stay."},
