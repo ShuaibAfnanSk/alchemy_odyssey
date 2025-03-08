@@ -362,8 +362,8 @@ textarea:focus {
 .close {
     display: none;
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: 2rem;
+    right: 2rem;
     width: 40px;
     height: 40px;
 }
@@ -483,6 +483,14 @@ textarea:focus {
     bottom: 75px;
 }
 
+.nav-svg {
+    display: none;
+}
+
+.error-box h4 {
+    line-height: 1;
+}
+
 @media (max-width:1000px) {
     .who-we {
         flex-direction: column;
@@ -553,6 +561,10 @@ textarea:focus {
         width: 100%;
     }
 
+    .nav-svg {
+        display: block;
+    }
+
     .menu {
         position: fixed;
         width: 100%;
@@ -562,7 +574,9 @@ textarea:focus {
         justify-content: center;
         align-items: center;
         left: 0;
+        top: 0;
         transition: 1s ease;
+        overflow: hidden;
         z-index: 999999;
     }
 
