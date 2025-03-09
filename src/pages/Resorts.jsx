@@ -4,7 +4,6 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
 import Navbar from "../components/Navbar";
-import Ender from "../components/Ender";
 import Footer from "../components/Footer";
 
 const Resorts = () => {
@@ -30,7 +29,6 @@ const Resorts = () => {
                     </div>
                 </div>
             </section>
-            <Ender />
             <Footer />
         </>
     );

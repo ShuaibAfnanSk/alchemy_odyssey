@@ -1,6 +1,5 @@
 import AboutIndex from "../components/AboutIndex";
 import AboutWe from "../components/AboutWe";
-import Ender from "../components/Ender";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Team from "../components/Team";
@@ -27,7 +26,6 @@ const About = () => {
                     <Testimonials />
                 </div>
             </section>
-            <Ender />
             <Footer />
         </>
     );

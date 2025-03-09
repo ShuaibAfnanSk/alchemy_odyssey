@@ -1,7 +1,6 @@
 import resorts from "../data/resorts";
 import styled from "styled-components";
 import svg from "../assets/resort.svg";
-import Ender from "../components/Ender";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
@@ -24,7 +23,7 @@ const SingleResort = () => {
     return (
         <>
             <Navbar />
-            <section className="flex flex-col gap-16">
+            <section className="flex flex-col gap-16 mb-16">
                 <Fixed image={resort.mainImage} />
                 <div className="flex flex-col gap-16 px-4 sm:px-10">
                     <div className="flex justify-between flex-wrap gap-8">
@@ -61,7 +60,6 @@ const SingleResort = () => {
                         </div>
                     </div>
                 </div>
-                <Ender />
             </section>
             <Footer />
         </>

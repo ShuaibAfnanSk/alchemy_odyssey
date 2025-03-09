@@ -1,80 +1,54 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
 import countries from "../data/countries";
-import CountryCard from "./CountryCard";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
+import styled from "styled-components";
+
+const CountryElement = styled.li`
+    height: calc(800px / ${props => props.stamp});
+
+    @media (max-width: 1024px) {
+        height: calc(700px / ${props => props.stamp});
+    }
+
+    @media (max-width: 768px) {
+        height: calc(500px / ${props => props.stamp});
+    }
+`
 
 const CountryIndex = () => {
+
+    const [country, setCountry] = useState("Thailand");
+    const [active, setActive] = useState("Thailand");
 
     useEffect(() => {
         Aos.init({ duration: 1000 })
     }, []);
 
-    const [isDragging, setIsDragging] = useState(false);
-    const [startX, setStartX] = useState(0);
-    const [scrollLeft, setScrollLeft] = useState(0);
-    const sliderRef = useRef(null);
-
-    const handleMouseDown = (e) => {
-        setIsDragging(true);
-        setStartX(e.pageX - sliderRef.current.offsetLeft);
-        setScrollLeft(sliderRef.current.scrollLeft);
-    };
-
-    const handleMouseLeave = () => {
-        setIsDragging(false);
-    };
-
-    const handleMouseUp = () => {
-        setIsDragging(false);
-    };
-
-    const handleMouseMove = (e) => {
-        if (!isDragging) return;
-        e.preventDefault();
-        const x = e.pageX - sliderRef.current.offsetLeft;
-        const walk = (x - startX) * 2;
-        sliderRef.current.scrollLeft = scrollLeft - walk;
-    };
-
-    const handleTouchStart = (e) => {
-        setIsDragging(true);
-        setStartX(e.touches[0].pageX - sliderRef.current.offsetLeft);
-        setScrollLeft(sliderRef.current.scrollLeft);
-    };
-
-    const handleTouchMove = (e) => {
-        if (!isDragging) return;
-        e.preventDefault();
-        const x = e.touches[0].pageX - sliderRef.current.offsetLeft;
-        const walk = (x - startX) * 1;
-        sliderRef.current.scrollLeft = scrollLeft - walk;
-    };
-
-    const handleTouchEnd = () => {
-        setIsDragging(false);
-    };
+    const selectedCountry = countries.find((c) => c.name === country);
 
     return (
-        <section className="flex flex-col gap-12">
+        <section className="flex flex-col gap-12 bg-[#1a1a1a] text-white py-16 px-4 sm:px-10">
             <div className="flex flex-col items-center">
                 <h4 data-aos='fade-up'>select from countries</h4>
                 <h3 data-aos='fade-up' className="text-5xl">Countries</h3>
             </div>
-            <div className="h-[500px] flex my-10">
-                <div className="flex gap-8 overflow-hidden px-4 sm:px-10" ref={sliderRef}
-                    onMouseDown={handleMouseDown}
-                    onMouseLeave={handleMouseLeave}
-                    onMouseUp={handleMouseUp}
-                    onTouchStart={handleTouchStart}
-                    onTouchMove={handleTouchMove}
-                    onTouchEnd={handleTouchEnd}
-                    onMouseMove={handleMouseMove}
-                >
-                    {countries.map((c) => (
-                        <CountryCard item={c} />
+            <div data-aos="fade-up" className="flex border-2 border-[rgba(255,255,255,0.1)] md:p-8 lg:p-16 md:gap-8 lg:gap-16 relative w-full h-[700px] lg:h-[800px]">
+                <ul className="absolute p-6 md:p-0 z-10 md:z-0 md:w-fit w-full md:relative h-[500px] md:h-full flex flex-col justify-between">
+                    {countries.map((c, id) => (
+                        <CountryElement stamp={countries.length} className={`country-item flex items-center cursor-pointer md:pr-8 lg:pr-16 ${active === c.name ? "active" : ""}`} key={id}>
+                            <span
+                                onClick={() => { setCountry(c.name), setActive(c.name) }}
+                                onMouseEnter={() => { setCountry(c.name), setActive(c.name) }}>{c.name}</span></CountryElement>
                     ))}
+                </ul>
+                <div className="w-full absolute md:relative h-full flex flex-col justify-between">
+                    <img src={selectedCountry.image} className="w-[100%] h-[550px] brightness-50 md:brightness-100 md:h-[500px] lg:h-[550px] object-cover" alt="" />
+                    <div className="flex flex-col gap-2 p-6 md:p-0">
+                        <h4 className="text-2xl font-zig font-black underline">{selectedCountry.name}</h4>
+                        <p>{selectedCountry.desc}</p>
+                    </div>
                 </div>
             </div>
         </section>

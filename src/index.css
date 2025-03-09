@@ -14,38 +14,12 @@ body {
     background-color: #f8f8f8;
 }
 
-.countrycard:nth-child(even) {
-    align-self: flex-end;
-}
-
-.countryblock {
-    justify-content: flex-start;
-    align-items: flex-end;
-    transform: translateY(75px);
-}
-
 .highlighter {
     border-bottom: 2px solid #97c1a9;
 }
 
-.countrycontent {
-    background-color: #fff;
-    border-radius: 50%;
-    width: 250px;
-    height: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.countrycard:nth-child(even) .countryblock {
-    align-items: flex-start;
-    justify-content: flex-end;
-    transform: translateY(-75px);
-}
-
-.countrycard:nth-child(even) .countryblock .highlighter {
-    border-top: 2px solid #97c1a9;
+.country-card {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
 .gallery {
@@ -72,6 +46,23 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
+}
+
+.country-item {
+    border-right: 1px solid #f8f8f8;
+    transition: 0.5s ease;
+}
+
+.country-item span {
+    transition: 0.5s ease;
+}
+
+.country-item:hover, .country-item.active {
+    border-right: 1px solid #97c1a9;
+}
+
+.country-item:hover span, .country-item.active span {
+    color: #97c1a9;
 }
 
 .button {
@@ -483,6 +474,14 @@ textarea:focus {
     bottom: 75px;
 }
 
+.resort-polo img:not(:first-child) {
+    transform: translateX(-10px);
+}
+
+.resort-polo img:last-child {
+    transform: translateX(-20px);
+}
+
 .nav-svg {
     display: none;
 }
@@ -619,11 +618,6 @@ textarea:focus {
 
     .what-box {
         height: 500px;
-    }
-
-    .countrycontent {
-        width: 200px;
-        height: 200px;
     }
 }
 
