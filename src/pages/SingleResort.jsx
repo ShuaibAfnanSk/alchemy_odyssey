@@ -3,6 +3,10 @@ import styled from "styled-components";
 import svg from "../assets/resort.svg";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import Marquee from "../components/Marquee";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const Fixed = styled.div`
     background-position: center;
@@ -20,14 +24,18 @@ const SingleResort = () => {
     const path = window.location.pathname.split('/')[2];
     const resort = resorts.find((r) => r.id == path);
 
+    useEffect(() => {
+        Aos.init({ duration: 1000 })
+    }, []);
+
     return (
         <>
             <Navbar />
-            <section className="flex flex-col gap-16 mb-16">
+            <section className="flex flex-col gap-16 mb-24">
                 <Fixed image={resort.mainImage} />
                 <div className="flex flex-col gap-16 px-4 sm:px-10">
-                    <div className="flex justify-between flex-wrap gap-8">
-                        <div className="w-[300px] border overflow-hidden border-[rgba(0,0,0,0.15)] rounded-xl relative flex flex-col h-[325px] justify-between p-6">
+                    <div className="flex justify-between flex-wrap gap-8 overflow-hidden">
+                        <div data-aos="fade-right" className="w-[300px] border overflow-hidden border-[rgba(0,0,0,0.15)] rounded-xl relative flex flex-col h-[325px] justify-between p-6">
                             <div className="absolute bottom-[-25px] right-[-25px]">
                                 <img className="w-[100px] h-[100px]" src={svg} alt="" />
                             </div>
@@ -44,7 +52,7 @@ const SingleResort = () => {
                                 ))}
                             </div>
                         </div>
-                        <div className="w-full md:w-1/2">
+                        <div data-aos="fade-left" className="w-full md:w-1/2">
                             <p className="sm:text-justify w-full">{resort.desc}</p>
                         </div>
                     </div>
@@ -61,6 +69,7 @@ const SingleResort = () => {
                     </div>
                 </div>
             </section>
+            <Marquee />
             <Footer />
         </>
     );

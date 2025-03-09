@@ -24,29 +24,29 @@ const Partners = () => {
     }, []);
 
     return (
-        <section className='px-4 sm:px-10 flex mb-16 flex-col gap-16 overflow-hidden'>
+        <section className='px-4 sm:px-10 flex flex-col gap-16 overflow-hidden'>
             <div className='sponsor-marquee-con flex flex-col gap-4'>
-                <div data-aos='fade' className='sponsor-marquee flex gap-4 items-center'>
+                <div data-aos='fade' className='marquee flex gap-4 items-center'>
                     <div className='flex gap-4'>
-                        {sponsors.map((sponsor, key) => (
-                            <div key={key} className='px-4 flex items-center justify-center gap-4 rounded-full py-2 border border-[rgba(0,0,0,0.1)]'><span className='w-[5px] h-[5px] bg-black rounded-full'></span><p className='whitespace-nowrap'>{sponsor}</p></div>
+                        {sponsors.map((sponsor, id) => (
+                            <div key={id} className='px-4 flex items-center justify-center gap-4 rounded-full py-2 border border-[rgba(0,0,0,0.1)]'><span className='w-[5px] h-[5px] bg-black rounded-full'></span><p className='whitespace-nowrap'>{sponsor}</p></div>
                         ))}
                     </div>
                     <div className='flex gap-4'>
-                        {sponsors.map((sponsor, key) => (
-                            <div key={key} className='px-4 flex items-center justify-center gap-4 rounded-full py-2 border border-[rgba(0,0,0,0.1)]'><span className='w-[5px] h-[5px] bg-black rounded-full'></span><p className='whitespace-nowrap'>{sponsor}</p></div>
+                        {sponsors.map((sponsor, id) => (
+                            <div key={id} className='px-4 flex items-center justify-center gap-4 rounded-full py-2 border border-[rgba(0,0,0,0.1)]'><span className='w-[5px] h-[5px] bg-black rounded-full'></span><p className='whitespace-nowrap'>{sponsor}</p></div>
                         ))}
                     </div>
                 </div>
-                <div data-aos='fade' className='sponsor-marquee flex gap-4 items-center'>
+                <div data-aos='fade' className='marquee flex gap-4 items-center'>
                     <div className='flex gap-4'>
-                        {sponsors.map((sponsor, key) => (
-                            <div key={key} className='px-4 flex items-center justify-center gap-4 rounded-full py-2 border border-[rgba(0,0,0,0.1)]'><span className='w-[5px] h-[5px] bg-black rounded-full'></span><p className='whitespace-nowrap'>{sponsor}</p></div>
+                        {sponsors.map((sponsor, id) => (
+                            <div key={id} className='px-4 flex items-center justify-center gap-4 rounded-full py-2 border border-[rgba(0,0,0,0.1)]'><span className='w-[5px] h-[5px] bg-black rounded-full'></span><p className='whitespace-nowrap'>{sponsor}</p></div>
                         ))}
                     </div>
                     <div className='flex gap-4'>
-                        {sponsors.map((sponsor, key) => (
-                            <div key={key} className='px-4 flex items-center justify-center gap-4 rounded-full py-2 border border-[rgba(0,0,0,0.1)]'><span className='w-[5px] h-[5px] bg-black rounded-full'></span><p className='whitespace-nowrap'>{sponsor}</p></div>
+                        {sponsors.map((sponsor, id) => (
+                            <div key={id} className='px-4 flex items-center justify-center gap-4 rounded-full py-2 border border-[rgba(0,0,0,0.1)]'><span className='w-[5px] h-[5px] bg-black rounded-full'></span><p className='whitespace-nowrap'>{sponsor}</p></div>
                         ))}
                     </div>
                 </div>

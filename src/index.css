@@ -784,7 +784,7 @@ textarea:focus {
     }
 }
 
-.sponsor-marquee:nth-child(1) {
+.marquee:nth-child(1) {
     animation: marquee-left linear infinite 20s;
 }
 
@@ -797,7 +797,7 @@ textarea:focus {
     }
 }
 
-.sponsor-marquee:nth-child(2) {
+.marquee:nth-child(2) {
     animation: marquee-right linear infinite 30s;
 }
 
@@ -808,4 +808,12 @@ textarea:focus {
     100% {
         transform: translateX(0%);
     }
+}
+
+.img-marquee img:nth-child(5n) {
+    clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+}
+
+.img-marquee img:nth-child(3n) {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
 }

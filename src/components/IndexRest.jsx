@@ -9,6 +9,7 @@ import 'aos/dist/aos.css';
 import { useEffect } from "react";
 import Partners from "./Partners";
 import { Parallax } from "react-scroll-parallax";
+import Marquee from "./Marquee";
 
 const IndexRest = () => {
 
@@ -34,8 +35,8 @@ const IndexRest = () => {
                     <h3 data-aos='fade-up' className="text-5xl">About Us</h3>
                 </div>
                 <div className="flex flex-col gap-10 items-center">
-                    <div className="w-full h-[250px] sm:h-[400px] md:h-[700px] overflow-hidden">
-                        <Parallax className="w-full h-full" scale={[0.5, 1.25]}>
+                    <div className="w-full h-[250px] sm:h-[400px] md:h-[800px] overflow-hidden">
+                        <Parallax className="w-full h-full" scale={[0.5, 1.0]}>
                             <img data-aos='fade-up' src={polo} className="w-full rounded-2xl h-full object-cover" alt="" />
                         </Parallax>
                     </div>
@@ -47,6 +48,7 @@ const IndexRest = () => {
             <CountryIndex />
             <Activities />
             <Partners />
+            <Marquee />
         </section>
     );
 }

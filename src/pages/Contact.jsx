@@ -1,6 +1,7 @@
 import ContactForm from "../components/ContactForm";
 import Faq from "../components/Faq";
 import Footer from "../components/Footer";
+import Marquee from "../components/Marquee";
 import Navbar from "../components/Navbar";
 
 const Contact = () => {
@@ -11,6 +12,7 @@ const Contact = () => {
                 <ContactForm />
                 <Faq />
             </section>
+            <Marquee />
             <Footer />
         </>
     );

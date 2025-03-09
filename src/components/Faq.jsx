@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import faqs from "../data/faq";
 import minus from "../assets/minus.svg";
 import plus from "../assets/plus.svg";
 import beach from "../assets/beach.svg";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Faq = () => {
 
@@ -12,15 +14,19 @@ const Faq = () => {
         setShow((prev) => (prev === id ? null : id))
     }
 
+    useEffect(() => {
+        Aos.init({ duration: 1000 })
+    }, []);
+
     return (
         <div className="section px-4 sm:px-10 mb-16">
             <div className="flex flex-col items-center">
-                <h4>frequently asked questions</h4>
-                <h3 className="text-5xl text-center">Common Inquiries</h3>
+                <h4 data-aos="fade-up">frequently asked questions</h4>
+                <h3 data-aos="fade-up" className="text-5xl text-center">Common Inquiries</h3>
             </div>
             <div className="tail">
                 {faqs.map((f, id) => (
-                    <div key={id} className="container">
+                    <div data-aos="fade-up" key={id} className="container">
                         <div className="block shadow-custom">
                             <p className="text-sm sm:text-base">{f.question}</p>
                             <div onClick={() => handleShow(id)} className="action">

@@ -4,6 +4,7 @@ import 'aos/dist/aos.css';
 import { useEffect } from "react";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import Marquee from "../components/Marquee";
 
 // const images = countries.reduce((acc, item) => {
 //     return acc.concat(item.gallery);
@@ -55,6 +56,7 @@ const Gallery = () => {
                     </div>
                 </div>
             </section>
+            <Marquee />
             <Footer />
         </>
     );

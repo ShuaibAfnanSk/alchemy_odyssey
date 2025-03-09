@@ -5,6 +5,7 @@ import 'aos/dist/aos.css';
 import { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Marquee from "../components/Marquee";
 
 const Resorts = () => {
 
@@ -29,6 +30,7 @@ const Resorts = () => {
                     </div>
                 </div>
             </section>
+            <Marquee />
             <Footer />
         </>
     );

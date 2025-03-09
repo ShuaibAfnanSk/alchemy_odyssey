@@ -1,6 +1,7 @@
 import AboutIndex from "../components/AboutIndex";
 import AboutWe from "../components/AboutWe";
 import Footer from "../components/Footer";
+import Marquee from "../components/Marquee";
 import Navbar from "../components/Navbar";
 import Team from "../components/Team";
 import Testimonials from "../components/Testimonials";
@@ -26,6 +27,7 @@ const About = () => {
                     <Testimonials />
                 </div>
             </section>
+            <Marquee />
             <Footer />
         </>
     );
