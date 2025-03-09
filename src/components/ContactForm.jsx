@@ -15,7 +15,7 @@ const ContactForm = () => {
                 <h3 data-aos="fade-up" className="text-5xl">Contact</h3>
             </div>
             <div className="contact">
-                <div data-aos="fade-right" className="contactLeft">
+                <div data-aos="fade-up" className="contactLeft">
                     <div className="contact-box">
                         <h5>phone/ <span>+91-7075818209</span></h5>
                         <h5>email/ <span>alchemy.odyssey@gmail.com</span></h5>

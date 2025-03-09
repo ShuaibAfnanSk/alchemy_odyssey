@@ -10,7 +10,7 @@ const Marquee = () => {
     }, []);
 
     return (
-        <section data-aos='fade-up' className="overflow-hidden mt-8 mb-24">
+        <section data-aos='fade-up' className="overflow-hidden sm:mt-8 mb-16 sm:mb-24">
             <div className='marquee flex gap-4 sm:gap-8 items-center'>
                 <div className='flex gap-4 sm:gap-8 img-marquee'>
                     {countries.map((c, id) => (
