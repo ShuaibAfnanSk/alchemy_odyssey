@@ -43,7 +43,6 @@ const Navbar = () => {
                 </button>
                 <img src={resort} className="absolute nav-svg left-[-40px] rotate-[25deg] bottom-[-65px] w-[200px] h-[200px]" alt="" />
                 <ul className="nav">
-                    <Link to={"/"}><li onClick={handleOpen}>Home</li></Link>
                     <Link to={"/resorts"}><li onClick={handleOpen}>Resorts</li></Link>
                     <Link to={"/gallery"}><li onClick={handleOpen}>Gallery</li></Link>
                     <Link to={"/about"}><li onClick={handleOpen}>About</li></Link>
