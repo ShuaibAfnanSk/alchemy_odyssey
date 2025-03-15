@@ -18,7 +18,7 @@ const ResortIndex = () => {
                 <h4 data-aos='fade-up'>find your escape</h4>
                 <h3 className="text-5xl" data-aos='fade-up'>Resorts</h3>
             </div>
-            <div className="flex flex-wrap px-4 sm:px-10 gap-4 justify-center">
+            <div className="resort-index px-4 sm:px-10 gap-4">
                 {resorts.slice(0, 4).map((r) => (
                     <ResortCard item={r} />
                 ))}

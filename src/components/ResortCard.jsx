@@ -10,7 +10,7 @@ const ResortCard = ({ item }) => {
     }, []);
 
     return (
-        <div data-aos='fade-up' className="relative w-full min-w-[300px] flex-1 h-[450px] shadow-custom">
+        <div data-aos='fade-up' className="relative w-full h-[450px] shadow-custom">
             <img loading="lazy" src={item.mainImage} className="absolute-container brightness-75 object-cover" alt="" />
             <div className="absolute w-full bottom-0 container flex items-end gradient-bg">
                 <div className="flex flex-col w-full gap-2 border-t-[5px] border-[#97c1a9] bg-[#fff] p-4">
