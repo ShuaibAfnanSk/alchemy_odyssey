@@ -1,7 +1,4 @@
-import flipone from "../assets/polo-t.jpg";
-import fliptwo from "../assets/flip-n.jpg";
-
-const images = [fliptwo, flipone];
+const images = ["https://ik.imagekit.io/akiAfnan/Odyssey/polo-t.jpg?updatedAt=1746975532160", "https://ik.imagekit.io/akiAfnan/Odyssey/flip-n.jpg?updatedAt=1746975528594"];
 
 const AboutWe = () => {
 

@@ -1,14 +1,6 @@
 import { Link } from "react-router-dom";
-import Aos from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from "react";
 
 const ResortCard = ({ item }) => {
-
-    useEffect(() => {
-        Aos.init({ duration: 1000 })
-    }, []);
-
     return (
         <div data-aos='fade-up' className="relative w-full h-[450px] shadow-custom">
             <img loading="lazy" src={item.mainImage} className="absolute-container brightness-75 object-cover" alt="" />

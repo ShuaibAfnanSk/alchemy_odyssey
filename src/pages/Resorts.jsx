@@ -1,18 +1,10 @@
 import ResortCard from "../components/ResortCard";
 import resorts from "../data/resorts";
-import Aos from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Marquee from "../components/Marquee";
 
 const Resorts = () => {
-
-    useEffect(() => {
-        Aos.init({ duration: 1000 })
-    }, []);
-
     return (
         <>
             <Navbar />

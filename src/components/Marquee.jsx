@@ -1,13 +1,6 @@
-import { useEffect } from "react";
 import countries from "../data/countries";
-import Aos from 'aos';
-import 'aos/dist/aos.css';
 
 const Marquee = () => {
-
-    useEffect(() => {
-        Aos.init({ duration: 1000 })
-    }, []);
 
     return (
         <section data-aos='fade-up' className="overflow-hidden sm:mt-8 mb-16 sm:mb-24">

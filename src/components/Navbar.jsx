@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.svg";
+import logo from "../assets/svgs/logo.svg";
 import { useState, useEffect } from "react";
-import menu from "../assets/menu.svg";
-import resort from "../assets/resort.svg";
+import menu from "../assets/svgs/menu.svg";
+import resort from "../assets/svgs/resort.svg";
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);

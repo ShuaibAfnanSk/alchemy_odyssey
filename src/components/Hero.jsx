@@ -1,15 +1,14 @@
 import { Link } from "react-router-dom";
-import banner from "../assets/banner.mp4";
 
 const Hero = () => {
     return (
         <section className="w-full h-100h relative">
             <div className="w-full h-full absolute">
                 <video className="w-full h-full object-cover" playsInline autoPlay loop muted>
-                    <source src={banner} type="video/mp4" />
+                    <source src="https://ik.imagekit.io/akiAfnan/Odyssey/banner.mp4?updatedAt=1746975530237" type="video/mp4" />
                 </video>
             </div>
-            <div className="px-8 sm:pl-[150px] absolute w-full h-full flex items-center text-white">
+            <div className="px-8 sm:pl-[100px] lg:pl-[150px] absolute w-full h-full flex items-center text-white">
                 <div className="flex flex-col gap-8 items-start">
                     <div className="flex flex-col uppercase">
                         <h4 className="text-xl translate-x-2">Alchemy</h4>

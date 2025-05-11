@@ -8,9 +8,9 @@ const AboutIndex = () => {
             </div>
             <div className="what-right">
                 <div className="what-box" data-aos='fade-left'>
-                    <img className="polos" src="https://raw.githubusercontent.com/ShuaibAfnanSk/resort_assests/main/shot-f.jpg" alt="" />
-                    <img className="polos" src="https://raw.githubusercontent.com/ShuaibAfnanSk/resort_assests/main/shot-i.jpg" alt="" />
-                    <img className="polos" src="https://raw.githubusercontent.com/ShuaibAfnanSk/resort_assests/main/shot-s.jpg" alt="" />
+                    <img className="polos" src="https://ik.imagekit.io/akiAfnan/Odyssey/shot-f.jpg?updatedAt=1746981617029" alt="" />
+                    <img className="polos" src="https://ik.imagekit.io/akiAfnan/Odyssey/shot-i.jpg?updatedAt=1746981617134" alt="" />
+                    <img className="polos" src="https://ik.imagekit.io/akiAfnan/Odyssey/shot-s.jpg?updatedAt=1746981617068" alt="" />
                 </div>
             </div>
         </section>

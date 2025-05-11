@@ -5,16 +5,8 @@ import Marquee from "../components/Marquee";
 import Navbar from "../components/Navbar";
 import Team from "../components/Team";
 import Testimonials from "../components/Testimonials";
-import Aos from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from "react";
 
 const About = () => {
-
-    useEffect(() => {
-        Aos.init({ duration: 1000 })
-    }, []);
-
     return (
         <>
             <Navbar />

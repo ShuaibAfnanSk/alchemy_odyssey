@@ -1,8 +1,5 @@
 import { useState } from "react";
 import countries from "../data/countries";
-import Aos from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from "react";
 import styled from "styled-components";
 
 const CountryElement = styled.li`
@@ -21,10 +18,6 @@ const CountryIndex = () => {
 
     const [country, setCountry] = useState("Thailand");
     const [active, setActive] = useState("Thailand");
-
-    useEffect(() => {
-        Aos.init({ duration: 1000 })
-    }, []);
 
     const selectedCountry = countries.find((c) => c.name === country);
 

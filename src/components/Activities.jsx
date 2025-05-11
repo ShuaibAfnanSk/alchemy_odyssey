@@ -1,13 +1,7 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import activities from "../data/activities";
-import Aos from "aos";
-import 'aos/dist/aos.css';
 
 const Activities = () => {
-
-    useEffect(() => {
-        Aos.init({ duration: 1000 })
-    }, []);
 
     const [isDragging, setIsDragging] = useState(false);
     const [startX, setStartX] = useState(0);

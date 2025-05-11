@@ -8,6 +8,8 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Gallery from './pages/Gallery';
 import Error from './pages/Error';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 function ScrollToTopOnMount() {
   const location = useLocation();
@@ -22,6 +24,10 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    Aos.init({ duration: 1000 })
+  }, []);
+
+  useEffect(() => {
     const handleLoad = () => {
       setTimeout(() => {
         setLoading(false);
@@ -33,7 +39,7 @@ function App() {
     } else {
       window.addEventListener("load", handleLoad);
     }
-    
+
   }, []);
 
 

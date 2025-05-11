@@ -1,8 +1,4 @@
-import Aos from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from "react";
-import ocean from '../assets/gallery.jpg';
-import shake from '../assets/shake.svg'
+import shake from '../assets/svgs/shake.svg'
 
 const Partners = () => {
 
@@ -18,10 +14,6 @@ const Partners = () => {
         "GoPro",
         "Mastercard Travel Rewards"
     ];
-
-    useEffect(() => {
-        Aos.init({ duration: 1000 })
-    }, []);
 
     return (
         <section className='px-4 sm:px-10 flex flex-col gap-16 overflow-hidden'>
@@ -62,7 +54,7 @@ const Partners = () => {
                     </div>
                 </div>
                 <div data-aos='fade-left' className='h-[425px] flex-1'>
-                    <img src={ocean} alt="" className='rounded-xl h-full object-cover w-full' />
+                    <img src="https://ik.imagekit.io/akiAfnan/Odyssey/gallery.jpg?updatedAt=1746975528480" alt="" className='rounded-xl h-full object-cover w-full' />
                 </div>
             </div>
         </section>

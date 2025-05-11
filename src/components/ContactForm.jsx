@@ -1,12 +1,4 @@
-import Aos from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from "react";
-
 const ContactForm = () => {
-
-    useEffect(() => {
-        Aos.init({ duration: 1000 })
-    }, []);
 
     return (
         <section className="flex flex-col gap-16 mt-[7rem] px-4 overflow-hidden">

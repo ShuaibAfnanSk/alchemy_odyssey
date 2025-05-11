@@ -1,17 +1,8 @@
 import { Link } from "react-router-dom";
 import resorts from "../data/resorts";
 import ResortCard from "./ResortCard";
-import 'aos/dist/aos.css';
-import { useEffect } from "react";
-import Aos from 'aos';
-import 'aos/dist/aos.css';
 
 const ResortIndex = () => {
-
-    useEffect(() => {
-        Aos.init({ duration: 1000 })
-    }, []);
-
     return (
         <section className="w-full flex flex-col gap-12">
             <div className="flex flex-col items-center">

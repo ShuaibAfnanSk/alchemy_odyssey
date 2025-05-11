@@ -1,12 +1,9 @@
 import resorts from "../data/resorts";
 import styled from "styled-components";
-import svg from "../assets/resort.svg";
+import svg from "../assets/svgs/resort.svg";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Marquee from "../components/Marquee";
-import Aos from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from "react";
 
 const Fixed = styled.div`
     background-position: center;
@@ -23,10 +20,6 @@ const SingleResort = () => {
 
     const path = window.location.pathname.split('/')[2];
     const resort = resorts.find((r) => r.id == path);
-
-    useEffect(() => {
-        Aos.init({ duration: 1000 })
-    }, []);
 
     return (
         <>

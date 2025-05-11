@@ -1,10 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState} from "react";
 import faqs from "../data/faq";
-import minus from "../assets/minus.svg";
-import plus from "../assets/plus.svg";
-import beach from "../assets/beach.svg";
-import Aos from 'aos';
-import 'aos/dist/aos.css';
+import minus from "../assets/svgs/minus.svg";
+import plus from "../assets/svgs/plus.svg";
+import beach from "../assets/svgs/beach.svg";
 
 const Faq = () => {
 
@@ -13,10 +11,6 @@ const Faq = () => {
     const handleShow = (id) => {
         setShow((prev) => (prev === id ? null : id))
     }
-
-    useEffect(() => {
-        Aos.init({ duration: 1000 })
-    }, []);
 
     return (
         <div className="section px-4 sm:px-10 mb-16">

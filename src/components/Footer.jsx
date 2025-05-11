@@ -1,8 +1,8 @@
-import logo from "../assets/logo.svg";
-import insta from "../assets/insta.svg";
-import twitter from "../assets/twitter.svg";
-import fb from "../assets/fb.svg";
-import linkedin from "../assets/linkedin.svg";
+import logo from "../assets/svgs/logo.svg";
+import insta from "../assets/svgs/insta.svg";
+import twitter from "../assets/svgs/twitter.svg";
+import fb from "../assets/svgs/fb.svg";
+import linkedin from "../assets/svgs/linkedin.svg";
 
 const icons = [insta, twitter, fb, linkedin]
 

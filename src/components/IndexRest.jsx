@@ -1,27 +1,18 @@
-import polo from "../assets/about.jpg";
-import indexexplore from "../assets/about-index.jpg";
 import ResortIndex from "./ResortIndex";
 import CountryIndex from "./CountryIndex";
 import Activities from "./Activities";
 import { Link } from "react-router-dom";
-import Aos from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from "react";
 import Partners from "./Partners";
 import { Parallax } from "react-scroll-parallax";
 import Marquee from "./Marquee";
 
 const IndexRest = () => {
 
-    useEffect(() => {
-        Aos.init({ duration: 1000 })
-    }, []);
-
     return (
         <section className="w-full pt-16 flex flex-col gap-16 bg-[#f8f8f8]">
             <div className="flex flex-col relative h-[500px] md:h-fit md:flex-row justify-between">
                 <div data-aos='fade-right' className="w-[90%] h-full absolute md:relative md:w-[450px] md:h-[550px] overflow-hidden">
-                    <img src={indexexplore} className="w-full h-full object-cover" alt="" />
+                    <img src="https://ik.imagekit.io/akiAfnan/Odyssey/about-index.jpg?updatedAt=1746975528585" className="w-full h-full object-cover" alt="" />
                 </div>
                 <div className="flex basis-[50%] box absolute p-4 md:relative items-end md:items-center justify-start md:justify-center">
                     <div data-aos='fade-up' className="flex bg-[#f8f8f8] p-4 md:relative md:p-0 w-[90%] md:w-fit h-fit md:bg-none flex-col gap-6">
@@ -37,7 +28,7 @@ const IndexRest = () => {
                 <div className="flex flex-col gap-10 items-center">
                     <div className="w-full h-[250px] sm:h-[400px] md:h-[800px] overflow-hidden">
                         <Parallax className="w-full h-full" scale={[0.5, 1.0]}>
-                            <img data-aos='fade-up' src={polo} className="w-full rounded-2xl h-full object-cover" alt="" />
+                            <img data-aos='fade-up' src="https://ik.imagekit.io/akiAfnan/Odyssey/about.jpg?updatedAt=1746975528588" className="w-full rounded-2xl h-full object-cover" alt="" />
                         </Parallax>
                     </div>
                     <p data-aos='fade-up' className="text-center w-full sm:w-[400px] px-4">We provide exclusive resort packages for luxurious getaways, ensuring unforgettable experiences in the world's most stunning destinations.</p>
