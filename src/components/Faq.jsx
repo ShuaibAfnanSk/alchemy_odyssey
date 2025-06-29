@@ -13,7 +13,7 @@ const Faq = () => {
     }
 
     return (
-        <div className="section px-4 sm:px-10 mb-16">
+        <div className="section px-4 sm:px-10 mb-12">
             <div className="flex flex-col items-center">
                 <h4 data-aos="fade-up">frequently asked questions</h4>
                 <h3 data-aos="fade-up" className="text-5xl text-center">Common Inquiries</h3>

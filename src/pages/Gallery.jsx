@@ -1,7 +1,6 @@
 import countries from "../data/countries";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import Marquee from "../components/Marquee";
 
 // const images = countries.reduce((acc, item) => {
 //     return acc.concat(item.gallery);
@@ -10,7 +9,7 @@ import Marquee from "../components/Marquee";
 
 const Gallery = () => {
     return (
-        <>
+        <main className="main">
             <Navbar />
             <section className="flex flex-col">
                 <div className="gallery" />
@@ -48,9 +47,8 @@ const Gallery = () => {
                     </div>
                 </div>
             </section>
-            <Marquee />
             <Footer />
-        </>
+        </main>
     );
 }
 

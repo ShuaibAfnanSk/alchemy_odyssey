@@ -1,15 +1,20 @@
-import { useEffect, useState } from 'react';
-import './index.css';
-import Index from './pages/Index';
-import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
-import Resorts from './pages/Resorts';
-import SingleResort from './pages/SingleResort';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import Gallery from './pages/Gallery';
-import Error from './pages/Error';
-import Aos from 'aos';
-import 'aos/dist/aos.css';
+import { useEffect, useState } from "react";
+import "./index.css";
+import Index from "./pages/Index";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useLocation,
+} from "react-router-dom";
+import Resorts from "./pages/Resorts";
+import SingleResort from "./pages/SingleResort";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Gallery from "./pages/Gallery";
+import Error from "./pages/Error";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function ScrollToTopOnMount() {
   const location = useLocation();
@@ -20,11 +25,10 @@ function ScrollToTopOnMount() {
 }
 
 function App() {
-
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    Aos.init({ duration: 1000 })
+    Aos.init({ duration: 1000 });
   }, []);
 
   useEffect(() => {
@@ -39,12 +43,9 @@ function App() {
     } else {
       window.addEventListener("load", handleLoad);
     }
-
   }, []);
 
-
   return (
-
     <Router>
       <ScrollToTopOnMount />
 
@@ -67,17 +68,16 @@ function App() {
       )}
 
       <Routes>
-        <Route exact path='/' element={<Index />} />
-        <Route path='resorts' element={<Resorts />} />
-        <Route path='resort/:id' element={<SingleResort />} />
-        <Route exact path='gallery' element={<Gallery />} />
-        <Route path='about' element={<About />} />
-        <Route path='contact' element={<Contact />} />
-        <Route path='*' element={<Error />} />
+        <Route exact path="/" element={<Index />} />
+        <Route path="resorts" element={<Resorts />} />
+        <Route path="resort/:id" element={<SingleResort />} />
+        <Route exact path="gallery" element={<Gallery />} />
+        <Route path="about" element={<About />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="*" element={<Error />} />
       </Routes>
     </Router>
-
-  )
+  );
 }
 
-export default App
+export default App;

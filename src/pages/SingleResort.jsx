@@ -3,7 +3,6 @@ import styled from "styled-components";
 import svg from "../assets/svgs/resort.svg";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import Marquee from "../components/Marquee";
 
 const Fixed = styled.div`
     background-position: center;
@@ -22,9 +21,9 @@ const SingleResort = () => {
     const resort = resorts.find((r) => r.id == path);
 
     return (
-        <>
+        <main className="main">
             <Navbar />
-            <section className="flex flex-col gap-16 mb-24">
+            <section className="flex flex-col gap-12 mb-12">
                 <Fixed image={resort.mainImage} />
                 <div className="flex flex-col gap-16 px-4 sm:px-10">
                     <div className="flex justify-between flex-wrap gap-8 overflow-hidden">
@@ -62,9 +61,8 @@ const SingleResort = () => {
                     </div>
                 </div>
             </section>
-            <Marquee />
             <Footer />
-        </>
+        </main>
     );
 }
 

@@ -22,7 +22,7 @@ const CountryIndex = () => {
     const selectedCountry = countries.find((c) => c.name === country);
 
     return (
-        <section className="flex flex-col gap-12 bg-[#1a1a1a] text-white py-16 px-4 sm:px-10">
+        <section className="flex flex-col gap-12 bg-[#1a1a1a] text-white py-12 px-4 sm:px-10">
             <div className="flex flex-col items-center">
                 <h4 data-aos='fade-up'>select from countries</h4>
                 <h3 data-aos='fade-up' className="text-5xl">Countries</h3>
@@ -37,10 +37,11 @@ const CountryIndex = () => {
                     ))}
                 </ul>
                 <div className="w-full absolute md:relative h-full flex flex-col justify-between">
-                    <img src={selectedCountry.image} className="w-[100%] h-[550px] brightness-50 md:brightness-100 md:h-[500px] lg:h-[550px] object-cover" alt="" />
+                    <img src={`${selectedCountry.image}?tr=w-1200,h-700,f-auto,q-auto,fo-auto`} className="w-[100%] h-[550px] brightness-50 md:brightness-100 md:h-[475px] lg:h-[525px] object-cover" alt="" />
                     <div className="flex flex-col gap-2 p-6 md:p-0">
                         <h4 className="text-2xl font-zig font-black underline">{selectedCountry.name}</h4>
                         <p>{selectedCountry.desc}</p>
+                        <button className="w-fit underline">Explore</button>
                     </div>
                 </div>
             </div>
