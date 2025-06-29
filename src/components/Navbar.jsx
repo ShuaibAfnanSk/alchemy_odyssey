@@ -25,10 +25,16 @@ const Navbar = () => {
     }, []);
 
     return (
-        <header
-            className={`w-full items-center px-10 h-[100px] fixed z-50 flex justify-between transition-colors duration-300 ${scrollY > 100 ? 'bg-[rgba(255,255,255)] border-b border-[rgba(0,0,0,0.1)]' : ''
-                }`}
-        >
+//         <header
+//     className={`navbar px-10 h-[75px] bg-[rgb(255,255,255,1)] transition-all duration-300 rounded-b-xl w-[80%] top-0 left-0 fixed z-50 flex items-center justify-between
+//         ${scrollY > 1000 ? 'opacity-0 pointer-events-none': ''}
+//     `}
+// >
+    <header
+    className={`navbar px-10 h-[75px] bg-[rgb(255,255,255,1)] transition-all duration-300 rounded-b-xl w-[80%] top-0 left-0 fixed z-50 flex items-center justify-between
+    `}
+>
+
             <Link to={"/"}>
                 <img src={logo} className="w-[50px] h-[50px]" alt="Logo" />
             </Link>

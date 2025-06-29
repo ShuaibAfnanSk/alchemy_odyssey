@@ -13,15 +13,15 @@ const Footer = () => {
     const date = new Date().getFullYear()
 
     return (
-        <footer className="border-t border-[rgba(0,0,0,0.15)] rounded-t-[3rem]">
+        <footer className="border-t bg-white border-[rgba(0,0,0,0.15)] overflow-hidden rounded-t-[48px]">
             <div className="flex md:flex-row flex-col sm:justify-between items-center w-full gap-10 px-4 sm:px-10 py-10">
                 <div className="flex flex-col gap-2 items-center">
                     <h3>Follow us on</h3>
                     <div className="flex items-center gap-2 text-xl">
-                        <div className="w-[50px] h-[50px] border border-[rgba(0,0,0,0.1)] bg-white rounded-full flex items-center justify-center"><i class="ph ph-x-logo"></i></div>
-                        <div className="w-[50px] h-[50px] border border-[rgba(0,0,0,0.1)] bg-white rounded-full flex items-center justify-center"><i class="ph ph-instagram-logo"></i></div>
-                        <div className="w-[50px] h-[50px] border border-[rgba(0,0,0,0.1)] bg-white rounded-full flex items-center justify-center"><i class="ph ph-facebook-logo"></i></div>
-                        <div className="w-[50px] h-[50px] border border-[rgba(0,0,0,0.1)] bg-white rounded-full flex items-center justify-center"><i class="ph ph-linkedin-logo"></i></div>
+                        <div className="w-[50px] h-[50px] border border-[rgba(0,0,0,0.1)] bg-[#f8f8f8] rounded-full flex items-center justify-center"><i class="ph ph-x-logo"></i></div>
+                        <div className="w-[50px] h-[50px] border border-[rgba(0,0,0,0.1)] bg-[#f8f8f8] rounded-full flex items-center justify-center"><i class="ph ph-instagram-logo"></i></div>
+                        <div className="w-[50px] h-[50px] border border-[rgba(0,0,0,0.1)] bg-[#f8f8f8] rounded-full flex items-center justify-center"><i class="ph ph-facebook-logo"></i></div>
+                        <div className="w-[50px] h-[50px] border border-[rgba(0,0,0,0.1)] bg-[#f8f8f8] rounded-full flex items-center justify-center"><i class="ph ph-linkedin-logo"></i></div>
                     </div>
                 </div>
                 <div className="flex flex-col gap-2 items-center w-full sm:w-fit">
@@ -32,7 +32,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="px-4 bg-white sm:px-10 h-[100px] flex justify-between items-center gap-4">
+            <div className="px-4 border-t sm:px-10 h-[100px] flex justify-between items-center gap-4">
                 <img src={logo} className="w-[50px] h-[50px]" alt="" />
                 <p className="text-sm sm:text-base">© {date} alchemy all rights reserved</p>
             </div>

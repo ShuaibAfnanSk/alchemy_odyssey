@@ -35,8 +35,8 @@ const Testimonials = () => {
                 <div className="overflow-hidden">
                     <Slider slider={slider} className="flex gap-4">
                         {testimonial.map((t) => (
-                            <div data-aos='fade-up' className="min-w-[300px] h-[300px] relative bg-white p-8 flex flex-col justify-between">
-                                <img src={t.image} className="w-[75px] object-cover h-[75px] rounded-[50%] top-[-3rem] left-[-3rem]" alt="" />
+                            <div data-aos='fade-up' className="min-w-[300px] h-[300px] testimony relative bg-white p-8 flex flex-col justify-between">
+                                <img src={`${t?.image}?tr=w-150,h-150,f-auto,q-auto,fo-auto`} loading="lazy" className="w-[75px] object-cover h-[75px] rounded-[50%] top-[-3rem] left-[-3rem]" alt="" />
                                 <img src={quote} className="w-[50px] h-[50px] absolute top-4 right-4" alt="" />
                                 <div className="flex flex-col gap-2">
                                     <div className="flex gap-1">

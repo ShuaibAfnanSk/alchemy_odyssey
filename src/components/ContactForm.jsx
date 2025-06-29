@@ -1,7 +1,7 @@
 const ContactForm = () => {
 
     return (
-        <section className="flex flex-col gap-16 mt-[7rem] px-4 overflow-hidden">
+        <section className="flex flex-col gap-12 mt-[112px] px-4 overflow-hidden">
             <div className="flex flex-col items-center">
                 <h4 data-aos="fade-up">talk to us</h4>
                 <h3 data-aos="fade-up" className="text-5xl">Contact</h3>

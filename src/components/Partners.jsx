@@ -16,7 +16,7 @@ const Partners = () => {
     ];
 
     return (
-        <section className='px-4 sm:px-10 flex flex-col gap-16 overflow-hidden'>
+        <section className='px-4 sm:px-10 flex flex-col gap-12 overflow-hidden'>
             <div className='sponsor-marquee-con flex flex-col gap-4'>
                 <div data-aos='fade' className='marquee flex gap-4 items-center'>
                     <div className='flex gap-4'>
@@ -54,7 +54,7 @@ const Partners = () => {
                     </div>
                 </div>
                 <div data-aos='fade-left' className='h-[425px] flex-1'>
-                    <img src="https://ik.imagekit.io/akiAfnan/Odyssey/gallery.jpg?updatedAt=1746975528480" alt="" className='rounded-xl h-full object-cover w-full' />
+                    <img src="https://ik.imagekit.io/akiAfnan/Odyssey/gallery.jpg?tr=w-1000,h-500,f-auto,q-auto,fo-auto" alt="" className='rounded-xl h-full object-cover w-full' />
                 </div>
             </div>
         </section>

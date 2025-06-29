@@ -66,7 +66,7 @@ const Activities = () => {
             >
                 {activities.map((a) => (
                     <div className="min-w-[350px] md:min-w-[650px] h-[400px] md:h-[500px] relative">
-                        <img src={a.src} className="absolute-container rounded-md object-cover" alt="" />
+                        <img src={`${a?.src}?tr=w-800,h-500,f-auto,q-auto,fo-auto`} className="absolute-container rounded-md object-cover" alt="" />
                         <div className="absolute-container flex flex-col justify-between pb-5">
                             <div className="flex justify-between p-5">
                                 <span className="w-3 h-3 rounded-[50%] bg-white"></span>
